@@ -6,7 +6,7 @@ import Facebook from '../assets/facebook.png'
 import insta from '../assets/insta.png'
 import linkdin from '../assets/linkdin.png'
 
-import { Envelope, EnvelopeFill, GeoAltFill, TelephoneForwardFill, CaretRightFill } from 'react-bootstrap-icons';
+import { Envelope, EnvelopeFill, TelephoneForwardFill, CaretRightFill } from 'react-bootstrap-icons';
 import footer_logo from '../assets/logo3.png';
 import { Fade } from 'react-awesome-reveal';
 import { Link, NavLink } from 'react-router-dom';
@@ -22,7 +22,7 @@ const Footer = () => {
         {/* know section */}
         <div className="wrapper">
           <Row className="flex justify-content-center" style={{ padding: '40px', marginTop: '50px', borderRadius: '20px' }}>
-            <Col md={12} lg={4}>
+            <Col md={12} lg={4} style={{ width: '33%' }}>
               <Fade direction='up' cascade damping={0.3} triggerOnce={true}>
                 <div className="footer_logo">
                   <Link to='/'> <img src={footer_logo} alt="footer_logo" /></Link>
@@ -33,49 +33,45 @@ const Footer = () => {
                   read and learn.
                 </p>
                 <ul className='mt-5 address-list'>
-                  <li className='mb-2'>
-                    <Row>
-                      <Col lg={1} md={1} xs={1}><GeoAltFill className='address-icon' size={17} /></Col>
-                      <Col lg={11} md={11} xs={11}><p className='font15 text-primary-color tetx-black'> <b> Address:</b> Kendriya Vihar, Sector 56, Gurugram, Haryana 122011</p></Col>
-                    </Row>
-                  </li>
-                  <li className='mb-3'>
-                    <Row>
+                  <li className='mb-3 '>
+                    <Row className='flex'>
                       <Col lg={1} md={1} xs={1}><EnvelopeFill className='address-icon' border="gray" size={17} /></Col>
-                      <Col lg={11} md={11} xs={11}><p className='font15 text-primary-color'> <b>Email:</b> <a href="mailto:info@readingmatters.in" className='text-black'>info@readingmatters.in</a></p></Col>
+                      <Col lg={11} md={11} xs={11}><p className='font15 text-primary-color pl-4'> <b> Email:</b> <a href="mailto:info@readingmatters.in" className='text-black'>info@readingmatters.in</a></p></Col>
                     </Row>
                   </li>
                   <li >
-                    <Row>
+                    <Row className='flex'>
                       <Col lg={1} md={1} xs={1}><TelephoneForwardFill className='address-icon' size={17} /></Col>
-                      <Col lg={11} md={11} xs={11}><p className='font15 text-primary-color'>  <b>Phone:</b ><a href="tel:+91-78386 68993" className='text-black'> +91-78386 68993 </a></p></Col>
+                      <Col lg={11} md={11} xs={11}><p className='font15 text-primary-color pl-4'>  <b> Phone:</b ><a href="tel:+91-78386 68993" className='text-black'> +91-78386 68993 </a></p></Col>
                     </Row>
                   </li>
 
                 </ul>
               </Fade>
             </Col>
-            <Col md={12} lg={4}></Col>
-            <Col md={12} lg={4} className="align-content-center ">
+            <Col md={12} lg={4} style={{ width: '33%' }}>
+
+            </Col>
+            <Col md={12} lg={4} style={{ width: '33%' }} className="align-content-center ">
               <div className="footer-info">
                 <Fade direction='up' cascade damping={0.3} triggerOnce={true}>
                   <h6 className="weight800 font20 padding10">
                     Quick Links
                   </h6>
                   <NavLink to="/readonathome" onClick={handleClickTop}>
-                    <p className='mt-3 font18 text-black'>
+                    <p className='mt-3 font18 text-black flex'>
                       <CaretRightFill color="black" size={18} /> ReadON At Home</p>
                   </NavLink>
                   <NavLink to="/privacypolicy" target='_blank'>
-                    <p className='mt-3 font18 text-black'>
+                    <p className='mt-3 font18 text-black flex'>
                       <CaretRightFill color="black" size={18} /> Privacy Policy</p>
                   </NavLink>
                   <NavLink to="/refundpolicy" target='_blank'>
-                    <p className='mt-3 font18 text-black'>
+                    <p className='mt-3 font18 text-black flex'>
                       <CaretRightFill color="black" size={18} /> Refund Policy</p>
                   </NavLink>
                   <NavLink to="/termsofuse" target='_blank'>
-                    <p className='mt-3 font18 text-black'>
+                    <p className='mt-3 font18 text-black flex'>
                       <CaretRightFill color="black" size={18} /> Terms Of Use</p>
                   </NavLink>
 

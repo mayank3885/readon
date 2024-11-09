@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
 import '../../src/Benefits.css';
-import specialshapde from "../assets/special-shape.png";
 
 const ReadingJourney = () => {
     return (
