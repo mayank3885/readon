@@ -1,0 +1,276 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+/* Body font styles */
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  /* Apply Montserrat as primary and Arial as fallback */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 350px;
+}
+
+/* Code font styles */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Default section padding */
+section {
+  padding: 2rem;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+#howdoes {
+  padding: 80px 0px;
+  position: relative;
+}
+
+#howdoes .howdoes-info {
+  width: 90%;
+  margin: 70px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#howdoes .howdoes-info .box-item {
+  margin: 0px 20px;
+  position: relative;
+  text-align: center;
+}
+
+#howdoes .howdoes-info .box-item .box-img {
+  width: 130px;
+  margin: auto;
+  position: relative;
+}
+
+#howdoes .howdoes-info .box-item .box-para {
+  margin-top: 10px;
+}
+
+#howdoes .howdoes-info .box-item .box-para p:nth-child(1) {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+#howdoes .howdoes-info .box-item .box-para h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#howdoes .howdoes-info .box-item .box-para p {
+  font-size: 13px;
+}
+
+#howdoes.boxImg::after {
+  right: 0;
+  left: inherit;
+  width: 20%;
+  height: 13%;
+}
+
+.arrow {
+  height: 2px;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: -145px;
+}
+
+#howdoes .arrow::after {
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  right: -6px;
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-left: 8px solid #ddd;
+}
+
+#howdoes .row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.dotted {
+  background-image: linear-gradient(90deg, #ddd 5px, transparent 0);
+  background-size: 10px 2px;
+  background-position: 0 100%;
+  animation: colorshade 1s ease-in infinite;
+}
+
+@keyframes colorshade {
+  0% {
+    background-position: 0 100%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+#testimonial.boxImg:after {
+  left: inherit;
+  right: 0;
+}
+
+#testimonial .mySwiper .swiper-slide {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  transform: scale(.8);
+  transition: transform .5s ease-in-out;
+}
+
+
+#testimonial .mySwiper .swiper-slide.swiper-slide-active {
+  box-shadow: 1px 10px 10px transparent;
+  transform: scale(1);
+}
+
+
+#testimonial .swiper-button-next,
+#testimonial .swiper-button-prev {
+  top: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: auto;
+  display: inline-flex;
+}
+
+#testimonial .swiper-button-next:after {
+  border-width: 0 3px 3px 0;
+  width: 10px;
+  height: 10px;
+  margin-left: 55px;
+}
+
+#testimonial .swiper-button-prev:after {
+  border-width: 0 3px 3px 0;
+  width: 10px;
+  height: 10px;
+  margin-right: 55px;
+}
+
+.btn-shadow {
+  animation: f 53s linear infinite;
+  background: linear-gradient(121.19deg, rgba(133, 239, 49, 0) 25.73%, hsla(0, 0%, 100%, .3) 45.27%, rgba(133, 239, 49, 0) 62.27%), #ff8d1a;
+}
+
+.btn-shadow-inverse {
+  animation: f 53s linear infinite;
+  background: linear-gradient(121.19deg, rgba(247, 94, 83, 0) 25.73%, hsla(17, 100%, 51%, 0.3) 45.27%, rgba(24, 255, 16, 0) 62.27%), #ffffff;
+}
+
+@keyframes f {
+  0% {
+    background-position: -5000px 0;
+  }
+
+  100% {
+    background-position: 5000px 0;
+  }
+}
+
+
+.btn-orange {
+  color: #fff;
+}
+
+.btn-border:hover {
+  color: #fff;
+}
+
+#footer {
+  padding: 50px 0px;
+}
+
+#footer .footer_logo {
+  max-width: 300px;
+}
+
+#footer .address {
+  line-height: 2.2rem;
+}
+
+#footer ul.address-list li {
+  margin: 12px 0px;
+}
+
+#footer ul.address-list li .address-icon {
+  fill: #0B254C;
+}
+
+#footer .subscribe-list {
+  background: #ddd;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 8px;
+  margin-top: 10px;
+}
+
+#footer .subscribe-list .form-control {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+#footer .subscribe-list .envbtn {
+  border: none;
+}
+
+#footer .social_icon ul li {
+  display: inline;
+}
+
+#footer .social_icon ul li a {
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 1s ease-in-out;
+  box-shadow: 10px 10px 10px #ffffff;
+  border-radius: 11px;
+  background-color: #fff;
+  transform: scale(1);
+}
+
+#footer .social_icon ul li a:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  #footer .subscribe-list {
+    width: auto;
+  }
+}
