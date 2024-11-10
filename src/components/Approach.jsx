@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Approach = () => {
   // Track which section is expanded
-  const [expandedSection, setExpandedSection] = useState(null);
+  const [expandedSection, setExpandedSection] = useState(1);
 
   // Content data
   const content = [
@@ -37,8 +37,7 @@ const Approach = () => {
       <div className="p-8">
         <div className="max-w-6xl mx-auto">
           <h2
-            className="text-2xl font-semibold text-[#003049] text-center mb-6"
-            style={{ fontFamily: 'Helvetica, Arial', fontSize: '24pt' }}
+            className="text-2xl font-semibold text-black text-center mb-10 font38-bold"
           >
             Our Comprehensive Approach
           </h2>
@@ -46,28 +45,28 @@ const Approach = () => {
             {content.map((item) => (
               <div
                 key={item.id}
-                className={`rounded-lg overflow-hidden shadow-md ${expandedSection === item.id ? 'bg-[#FB8500]' : 'bg-white border-black'
+                className={`rounded-lg overflow-hidden shadow-md bg-white border-black
                   }`}
                 style={{
-                  borderRadius: '23px',
-                  border: '1px solid'
+                  borderRadius: '10px',
+                  boxShadow: '0 27px 20px -19px #ff977e4f',
+                  background: '#F8F5F4'
                 }}
               >
                 {/* Header with title and toggle button */}
                 <div
                   onClick={() => toggleSection(item.id)}
-                  className="flex justify-between items-center px-6 py-4 cursor-pointer"
-                  style={{ fontFamily: 'Helvetica, Arial', fontSize: '18pt', background: expandedSection === item.id ? '#F58220' : '#F8F5F4' }}
+                  className="flex justify-between items-center px-6 py-4 cursor-pointer font24-bold"
+                  style={{ background: '#F8F5F4' }}
                 >
                   <h3
-                    className={`text-2xl font-semibold ${expandedSection === item.id ? 'text-white' : 'text-[#003049]'
+                    className={`text-2xl font-semibold'
                       }`}
-                    style={{ fontWeight: 'bold' }}
                   >
                     {String(item.id).padStart(2, '0')} {item.title}
                   </h3>
                   <span
-                    className={`text-2xl font-semibold ${expandedSection === item.id ? 'text-white' : 'text-[#003049]'
+                    className={`text-2xl font-semibold'
                       }`}
                   >
                     {expandedSection === item.id ? '-' : '+'}
@@ -76,28 +75,19 @@ const Approach = () => {
                 {/* Content description */}
                 {expandedSection === item.id && (
                   <div
-                    className="px-6 py-4 text-white"
-                    style={{ fontFamily: 'Helvetica, Arial', fontSize: '14pt' }}
+                    className="px-6 py-4"
+                    style={{ fontSize: '14pt' }}
                   >
                     <hr className="border-black mb-4" /> {/* Added bottom margin */}
-                    <p style={{ textAlign: 'left' }}>{item.description}</p>
+                    <p style={{ textAlign: 'left' }} className='font18-bold'>{item.description}</p>
                   </div>
                 )}
               </div>
             ))}
           </div>
-          {/* Button at the bottom */}
-          <div className="flex items-center justify-center pt-6">
-            <button
-              className="bg-[#F58220] hover:bg-[#E07B00] text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
-              onClick={() => alert("Assessment Started")}
-            >
-              Start an Assessment
-            </button>
-          </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

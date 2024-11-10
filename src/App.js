@@ -9,6 +9,8 @@ import ReadOnAtHome from './components/ReadOnAtHome';
 import Testimonials from './components/Testimonials';
 import ReadingJourney from './components/ReadingJourney';
 import Footer from './components/Footer';
+import Awards from './components/Awards';
+import Discover from './components/Discover';
 
 function App() {
   return (
@@ -17,12 +19,14 @@ function App() {
         <Navbar />
         <Home />
         <About />
+        <Discover />
         <WhyChoose />
         <Benefits />
         <Approach />
         <ReadOnAtHome />
         <Testimonials />
         <ReadingJourney />
+        <Awards />
         <Footer />
       </div>
     </div>

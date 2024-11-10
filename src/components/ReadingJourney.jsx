@@ -1,18 +1,17 @@
 import React from 'react';
-import '../../src/Benefits.css';
 
 const ReadingJourney = () => {
     return (
         <section
-            id="benefits"
-            className="relative flex items-center justify-center pt-24"
-            style={{ background: 'rgba(245, 130, 32, 1)', marginTop: '130px' }}
+            id="journey"
+            className="relative flex items-center justify-center"
+            style={{ background: 'rgba(245, 130, 32, 1)', marginTop: '130px', height: '300px' }}
         >
             <div className="content flex" style={{ flexDirection: 'column', alignItems: 'center', color: 'white' }}>
-                <h1 style={{ fontSize: '34px', fontWeight: '700' }}>Start Your Childs Reading Journey Today!</h1>
-                <p>Help your child unlock their full potential with ReadON. Experience how our innovative cognitive therapy can transform their reading skills and confidence.</p>
+                <h1 className='font38-bold'>Start Your Childs Reading Journey Today!</h1>
+                <p className='font24-light text-center'>Help your child unlock their full potential with ReadON. Experience how our innovative cognitive therapy can transform their reading skills and confidence.</p>
                 <button
-                    className="bg-[#FFFFFF] hover:bg-[#ffe1cff7] text-white font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow-inverse mt-8"
+                    className="bg-[#FFFFFF] hover:bg-[#ffe1cff7] font24-light text-white font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow-inverse mt-8"
                     onClick={() => alert("Assessment Started")}
                     style={{ color: '#F58220' }}
                 >

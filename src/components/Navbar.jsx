@@ -16,13 +16,13 @@ const Navbar = () => {
       {/* Logo Section */}
       <nav style={{ maxWidth: '1600px', width: '100%', margin: 'auto', flexDirection: 'row' }} className='flex justify-between items-center bg-white px-6 md:px-10 py-4'>
         <div className="flex items-center space-x-4 ">
-          <div className="h-10 w-28">
+          <div className="h-12 w-28">
             <img src={logo3} alt="ReadON Logo" className="h-full w-full object-contain" />
           </div>
         </div>
 
         {/* Desktop Navbar Links */}
-        <div className="hidden md:flex flex-grow justify-center max-w-screen-xl w-full" style={{ maxWidth: '1600px' }}>
+        <div className="hidden md:flex flex-grow justify-center max-w-screen-xl w-full font18-bold" style={{ maxWidth: '1600px' }}>
           <div className="flex space-x-6 justify-center w-full max-w-screen-xl">
             <Link to="home" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Home</Link>
             <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">About</Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <span>IN</span>
           </button>
 
-          <button className="bg-[#FB8500] text-white px-3 py-1 rounded hover:bg-[#dc933f] transition focus:outline-none" style={{ width: '95px' }}>
+          <button className="bg-[#FB8500] font18-light text-white px-3 py-1 rounded hover:bg-[#dc933f] transition focus:outline-none" style={{ width: '95px' }}>
             Sign In
           </button>
         </div>

@@ -4,6 +4,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import kidsSafeCertified from '../assets/kidSafeCertified.png'
+import patented from '../assets/PatentedProperty.png'
+import mars from '../assets/MaRS.png'
 
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Fade } from 'react-awesome-reveal';
@@ -11,27 +14,37 @@ import { Fade } from 'react-awesome-reveal';
 const data = [
     {
         id: 1,
-        video: "https://www.youtube.com/embed/9qDRtQxd1uw?si=dCXFYLa2j4H-55TF",
-        title: "YouTube video player"
+        image: kidsSafeCertified,
+        title: "Kids Safe Certified"
     },
     {
         id: 2,
-        video: "https://www.youtube.com/embed/UivL9VO4s2U?si=p1YtRFVy0xK9JXp5",
-        title: "YouTube video player"
+        image: mars,
+        title: "Mars"
     },
     {
         id: 3,
-        video: "https://www.youtube.com/embed/kd8cvdZcZ_k?si=glUyUjiKNWk01Ia0",
-        title: "YouTube video player"
+        image: patented,
+        title: "Patented Property"
     },
     {
         id: 4,
-        video: "https://www.youtube.com/embed/qGr7_-3dyCY?si=5BnzCRChDcuuLzm6",
-        title: "YouTube video player"
+        image: patented,
+        title: "YouTube image player"
+    },
+    {
+        id: 5,
+        image: mars,
+        title: "Mars"
+    },
+    {
+        id: 6,
+        image: patented,
+        title: "Patented Property"
     },
 ];
 
-export default function Testimonials() {
+export default function Awards() {
     const breakpoints = {
         320: {
             slidesPerView: 1,
@@ -48,11 +61,11 @@ export default function Testimonials() {
     };
 
     return (
-        <div id="testimonial">
+        <div id="awards" className='mt-20'>
             {/* heading section */}
-            <div className="section mb30">
+            <div className="section">
                 <Fade damping={0.4} triggerOnce={true}>
-                    <h2 className='font38-bold font-semibold text-[#003049] text-center' style={{ marginBottom: '50px' }}>Testimonials</h2>
+                    <h2 className='font38-bold font-semibold text-[#003049] text-center'>Awards and Recognitions</h2>
                 </Fade>
             </div>
             {/* row section */}
@@ -62,8 +75,8 @@ export default function Testimonials() {
                     delay: 3500,
                     disableOnInteraction: false,
                 }}
-                slidesPerView={3}
-                spaceBetween={30}
+                slidesPerView={5}
+                spaceBetween={0}
                 loop={true}
                 breakpoints={breakpoints}
                 navigation={true}
@@ -72,14 +85,9 @@ export default function Testimonials() {
             >
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
-                        <div className="video-container">
-                            <iframe
-                                width="100%"
-                                height="300px"
-                                src={item.video}
-                                title={item.title}
-                                allowFullScreen
-                            ></iframe>
+                        <div className="video-container flex items-center" style={{ flexDirection: 'column' }}>
+                            <img src={item.image} alt={item.id} style={{ maxWidth: '300px' }} />
+                            {/* <p className="font24-bold">{item.title}</p> */}
                         </div>
                     </SwiperSlide>
                 ))}

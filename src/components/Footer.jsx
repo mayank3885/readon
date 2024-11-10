@@ -20,14 +20,15 @@ const Footer = () => {
     <>
       <div id="footer">
         {/* know section */}
-        <div className="wrapper">
-          <Row className="flex justify-content-center" style={{ padding: '40px', marginTop: '50px', borderRadius: '20px' }}>
-            <Col md={12} lg={4} style={{ width: '33%' }}>
-              <Fade direction='up' cascade damping={0.3} triggerOnce={true}>
-                <div className="footer_logo">
-                  <Link to='/'> <img src={footer_logo} alt="footer_logo" /></Link>
+        <div className="wrapper mt-10">
+          <hr />
+          <Row className="flex justify-content-center" style={{ padding: '40px', borderRadius: '20px' }}>
+            <Col md={12} lg={4} style={{ width: '50%' }}>
+              <Fade direction='up' cascade damping={0.3} triggerOnce={true} style={{ width: '80%' }}>
+                <div className="footer_logo mb-4">
+                  <Link to='/'> <img src={footer_logo} alt="footer_logo" style={{ width: '70%' }} /></Link>
                 </div>
-                <p className="font15 address">A Section 8 company dedicated to
+                <p className="font18-light address">A Section 8 company dedicated to
                   creating awareness and providing
                   services to people struggling to
                   read and learn.
@@ -36,47 +37,74 @@ const Footer = () => {
                   <li className='mb-3 '>
                     <Row className='flex'>
                       <Col lg={1} md={1} xs={1}><EnvelopeFill className='address-icon' border="gray" size={17} /></Col>
-                      <Col lg={11} md={11} xs={11}><p className='font15 text-primary-color pl-4'> <b> Email:</b> <a href="mailto:info@readingmatters.in" className='text-black'>info@readingmatters.in</a></p></Col>
+                      <Col lg={11} md={11} xs={11}><p className='font18-light text-primary-color pl-4'> <b> Email:</b> <a href="mailto:info@readingmatters.in" className='text-black'>info@readingmatters.in</a></p></Col>
                     </Row>
                   </li>
                   <li >
                     <Row className='flex'>
                       <Col lg={1} md={1} xs={1}><TelephoneForwardFill className='address-icon' size={17} /></Col>
-                      <Col lg={11} md={11} xs={11}><p className='font15 text-primary-color pl-4'>  <b> Phone:</b ><a href="tel:+91-78386 68993" className='text-black'> +91-78386 68993 </a></p></Col>
+                      <Col lg={11} md={11} xs={11}><p className='font18-light text-primary-color pl-4'>  <b> Phone:</b ><a href="tel:+91-78386 68993" className='text-black'> +91-78386 68993 </a></p></Col>
                     </Row>
                   </li>
 
                 </ul>
               </Fade>
             </Col>
-            <Col md={12} lg={4} style={{ width: '33%' }}>
-
-            </Col>
-            <Col md={12} lg={4} style={{ width: '33%' }} className="align-content-center ">
+            <Col md={12} lg={4} style={{ width: '35%' }}>
               <div className="footer-info">
                 <Fade direction='up' cascade damping={0.3} triggerOnce={true}>
-                  <h6 className="weight800 font20 padding10">
+                  <h6 className='font24-bold'>
+                    Our Offices
+                  </h6>
+                  <h6 className='font20-bold'>
+                    India
+                  </h6>
+                  <NavLink to="/readonathome" onClick={handleClickTop}>
+                    <p className='mt-2 text-black flex font18-light'>Kendriya Vihar, Sector 56, Gurugram,</p>
+                    <p className='font18-light'>Haryana 122011</p>
+                  </NavLink>
+                  <NavLink to="/privacypolicy" target='_blank'>
+                    <p className='mt-1 text-black flex font18-light'> +91-78386 68993</p>
+                  </NavLink>
+
+                  <h6 className='mt-5 font20-bold' >
+                    Bahrain
+                  </h6>
+                  <NavLink to="/readonathome" onClick={handleClickTop}>
+                    <p className='mt-2 text-black flex font18-light'>PO. Box 13707, Near Asgher Ali Perfumes</p>
+                    <p className='font18-light'>Muharraq, Bahrain</p>
+                  </NavLink>
+                  <NavLink to="/privacypolicy" target='_blank'>
+                    <p className='mt-1 text-black flex font18-light'> +973-17368568</p>
+                  </NavLink>
+                </Fade>
+              </div>
+            </Col>
+            <Col md={12} lg={4} style={{ width: '35%' }} className="align-content-center ">
+              <div className="footer-info">
+                <Fade direction='up' cascade damping={0.3} triggerOnce={true}>
+                  <h6 className='font24-bold'>
                     Quick Links
                   </h6>
                   <NavLink to="/readonathome" onClick={handleClickTop}>
-                    <p className='mt-3 font18 text-black flex'>
-                      <CaretRightFill color="black" size={18} /> ReadON At Home</p>
+                    <p className='mt-3 font18-light text-black flex'>
+                      <CaretRightFill color="black" size={18} className='mt-1' /> ReadON At Home</p>
                   </NavLink>
                   <NavLink to="/privacypolicy" target='_blank'>
-                    <p className='mt-3 font18 text-black flex'>
-                      <CaretRightFill color="black" size={18} /> Privacy Policy</p>
+                    <p className='mt-3 font18-light text-black flex'>
+                      <CaretRightFill color="black" size={18} className='mt-1' /> Privacy Policy</p>
                   </NavLink>
                   <NavLink to="/refundpolicy" target='_blank'>
-                    <p className='mt-3 font18 text-black flex'>
-                      <CaretRightFill color="black" size={18} /> Refund Policy</p>
+                    <p className='mt-3 font18-light text-black flex'>
+                      <CaretRightFill color="black" size={18} className='mt-1' /> Refund Policy</p>
                   </NavLink>
                   <NavLink to="/termsofuse" target='_blank'>
-                    <p className='mt-3 font18 text-black flex'>
-                      <CaretRightFill color="black" size={18} /> Terms Of Use</p>
+                    <p className='mt-3 font18-light text-black flex'>
+                      <CaretRightFill color="black" size={18} className='mt-1' /> Terms Of Use</p>
                   </NavLink>
 
                   <div className='subscribe mt-5'>
-                    <p className='weight800 font18 '>Get Monthly Update</p>
+                    <p className='weight800 font18-light ' style={{ fontSize: '20px', fontWeight: '900' }}>Get Monthly Update</p>
                     <div className='subscribe-list'>
                       <input type='text' placeholder='Enter Your Email' className='form-control' />
                       <button type='submit' className='envbtn'><Envelope className='subscribe-icon' border="gray" size={32} /></button>
