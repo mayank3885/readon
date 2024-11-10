@@ -6,9 +6,9 @@ import specialshapde from "../assets/special-shape.png";
 const Benefits = () => {
   return (
     <section
-      className='px-5'
+      className='px-4'
       id="benefits"
-      style={{ background: '#F8F5F4', paddingTop: '40px', paddingBottom: '40px' }}
+      style={{ background: '#F8F5F4', paddingTop: '60px', paddingBottom: '65px' }}
     >
       <div className="relative flex items-center justify-center" style={{ maxWidth: '1600px', margin: 'auto' }}>
         {/* Special Shape Image */}
@@ -24,7 +24,7 @@ const Benefits = () => {
         ></div>
 
         {/* Content Container */}
-        <div className="benefits-content mx-auto mr-0  px-6 text-center lg:text-left lg:max-w-3xl relative z-10 lg:ml-auto lg:mr-20 lg:-top-2">
+        <div className="benefits-content mx-auto mr-0  px-0 md:px-6 text-center lg:text-left lg:max-w-3xl relative z-10 lg:ml-auto lg:mr-20 lg:-top-2">
           <h2 className="text-[#003049] mb-10 text-left font38-bold">
             Who Benefits from <span className="text-[#FB8500]">ReadON?</span>
           </h2>

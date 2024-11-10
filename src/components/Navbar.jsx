@@ -74,7 +74,7 @@ const Navbar = () => {
               </button>
             </div>
 
-            <button className="bg-[#FB8500] text-white rounded hover:bg-[#dc933f] transition focus:outline-none">
+            <button className="bg-[#FB8500] text-white rounded hover:bg-[#dc933f] transition focus:outline-none px-2 py-1">
               Sign In
             </button>
           </div>

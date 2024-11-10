@@ -34,10 +34,11 @@ const Approach = () => {
 
   return (
     <section id="approach" className="pt-16">
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         <div className="max-w-6xl mx-auto">
           <h2
-            className="text-2xl font-semibold text-black text-center mb-10 font38-bold"
+            className="text-2xl font-semibold text-black text-center mb-6 font38-bold"
+            style={{ lineHeight: '30px' }}
           >
             Our Comprehensive Approach
           </h2>
@@ -59,16 +60,10 @@ const Approach = () => {
                   className="flex justify-between items-center px-6 py-4 cursor-pointer font24-bold"
                   style={{ background: '#F8F5F4' }}
                 >
-                  <h3
-                    className={`text-2xl font-semibold'
-                      }`}
-                  >
+                  <h3>
                     {String(item.id).padStart(2, '0')} {item.title}
                   </h3>
-                  <span
-                    className={`text-2xl font-semibold'
-                      }`}
-                  >
+                  <span>
                     {expandedSection === item.id ? '-' : '+'}
                   </span>
                 </div>

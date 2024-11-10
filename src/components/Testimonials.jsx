@@ -1,4 +1,3 @@
-
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -37,11 +36,11 @@ export default function Testimonials() {
             slidesPerView: 1,
             spaceBetween: 20
         },
-        480: {
+        768: {
             slidesPerView: 2,
             spaceBetween: 30
         },
-        640: {
+        1000: {
             slidesPerView: 3,
             spaceBetween: 40
         }
@@ -52,7 +51,7 @@ export default function Testimonials() {
             {/* heading section */}
             <div className="section mb30">
                 <Fade damping={0.4} triggerOnce={true}>
-                    <h2 className='font38-bold font-semibold text-[#003049] text-center' style={{ marginBottom: '50px' }}>Testimonials</h2>
+                    <h2 className='font38-bold mb-6 md:mb-12 font-semibold text-[#003049] text-center' >Testimonials</h2>
                 </Fade>
             </div>
             {/* row section */}
@@ -62,13 +61,11 @@ export default function Testimonials() {
                     delay: 3500,
                     disableOnInteraction: false,
                 }}
-                slidesPerView={3}
-                spaceBetween={30}
                 loop={true}
-                breakpoints={breakpoints}
+                breakpoints={breakpoints}   // Adjusts based on screen width
                 navigation={true}
                 modules={[Navigation, Autoplay]}
-                className="mySwiper"
+                className="testimonials"
             >
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
@@ -84,6 +81,17 @@ export default function Testimonials() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <style jsx>{`
+                .swiper-button-next,
+                .swiper-button-prev {
+                    color: black; /* Change the arrow color to black */
+                }
+
+                .swiper-button-next:hover,
+                .swiper-button-prev:hover {
+                    color: #333; /* Optionally, change the color on hover */
+                }
+            `}</style>
         </div>
     );
 }

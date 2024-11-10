@@ -12,7 +12,7 @@ const Home = () => {
       }}
     >
       {/* Left Column: Text Content */}
-      <div className="flex flex-col md:flex-row items-center justify-center z-10 relative" style={{ minHeight: '600px' }}>
+      <div className="flex flex-col md:flex-row items-center justify-center z-10 relative content-container" style={{ minHeight: '600px' }}>
         <div className="text-center md:text-left w-full md:w-1/2 max-w-2xl px-4 md:px-0 mt-8 md:mt-0">
           <h1 className="font56-bold md:text-[3.5rem] font-extrabold text-[#023047] mb-4 leading-tight">
             <span className="flip-text block md:inline-block">

@@ -32,6 +32,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+/* font size for responsiveness */
+:root {
+  --base-font-size: 16px;
+  --scale-factor: 1;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --scale-factor: 0.85;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --scale-factor: 0.7;
+  }
+}
+
+.font18-light {
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.font18-bold {
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.font20-light {
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.font20-bold {
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.font24-light {
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.font24-bold {
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.font38-light {
+  font-size: calc(42px * var(--scale-factor));
+  /* Adjusted to match original value */
+  font-weight: 400;
+}
+
+.font38-bold {
+  font-size: calc(42px * var(--scale-factor));
+  /* Adjusted to match original value */
+  font-weight: 700;
+}
+
+.font56-light {
+  font-size: calc(64px * var(--scale-factor)) !important;
+  font-weight: 400;
+}
+
+.font56-bold {
+  font-size: calc(64px * var(--scale-factor)) !important;
+  font-weight: 700;
+}
+
 /* Default section padding */
 section {
   font-family: 'Thiccboy', sans-serif;
@@ -44,6 +114,35 @@ section {
 
   section {
     padding: 1rem;
+  }
+
+  #whychooseus .filter-buttons {
+    height: 120px !important;
+    width: 110% !important;
+    max-width: 220px !important;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+  }
+
+  #whychooseus .filter-buttons .filter {
+    gap: 1px !important;
+  }
+
+  #home .content-container {
+    justify-content: space-around;
+  }
+
+  #howdoes .howdoes-info {
+    margin: 50px auto !important;
+    padding: 0 !important;
+  }
+
+  #howdoes .row {
+    padding: 20px 0px !important;
+  }
+
+  #awards .swiper {
+    max-width: 100% !important;
   }
 }
 
@@ -136,7 +235,7 @@ section {
   right: 0;
 }
 
-#testimonial .mySwiper .swiper-slide {
+#testimonial .testimonials .swiper-slide {
   border: 1px solid transparent;
   box-sizing: border-box;
   transform: scale(.8);
@@ -144,7 +243,7 @@ section {
 }
 
 
-#testimonial .mySwiper .swiper-slide.swiper-slide-active {
+#testimonial .testimonials .swiper-slide.swiper-slide-active {
   box-shadow: 1px 10px 10px transparent;
   transform: scale(1);
 }
@@ -162,16 +261,16 @@ section {
 
 #testimonial .swiper-button-next:after {
   border-width: 0 3px 3px 0;
-  width: 10px;
-  height: 10px;
-  margin-left: 55px;
+  width: 0px;
+  height: 0px;
+  margin-left: 0px;
 }
 
 #testimonial .swiper-button-prev:after {
   border-width: 0 3px 3px 0;
-  width: 10px;
-  height: 10px;
-  margin-right: 55px;
+  width: 0px;
+  height: 0px;
+  margin-right: 105px;
 }
 
 .btn-shadow {
@@ -202,7 +301,6 @@ section {
 .btn-border:hover {
   color: #fff;
 }
-
 
 #footer .footer_logo {
   max-width: 300px;
@@ -268,7 +366,7 @@ section {
   justify-content: center
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #footer .subscribe-list {
     width: auto;
   }
@@ -283,9 +381,42 @@ section {
   .special-shape-img {
     display: none;
   }
+
+  .children-image {
+    display: none;
+  }
+
+  .custom-column {
+    width: 100% !important;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  #home {
+    padding-top: 100px !important;
+    height: 100vh !important;
+  }
+
+  #whychooseus {
+    margin-top: 20px !important;
+  }
+
+  #about {
+    padding-bottom: 70px !important;
+  }
+
+  #about .container {
+    margin-top: -70px !important;
+  }
 }
 
-#whychooseus .container {
+#whychooseus {
+  margin-top: -28px;
+}
+
+#discover .container {
   flex-direction: row;
 }
 
@@ -311,18 +442,22 @@ section {
 }
 
 @media screen and (max-width: 1000px) {
-  #whychooseus .container {
+  #discover .container {
     flex-direction: column;
   }
 
-  #whychooseus .container .text-left {
+  #discover .container .text-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
   }
 
-  #whychooseus .container .text-left h2 {
+  #discover .container .thumbnail {
+    height: 300px !important;
+  }
+
+  #discover .container .text-left h2 {
     text-align: center;
   }
 
@@ -335,8 +470,19 @@ section {
   }
 
   #home {
-    height: 70vh;
+    height: 85vh;
     display: flex;
+  }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .custom-column {
+    width: 50% !important;
+  }
+
+  .arrow {
+    display: none;
   }
 }
 
@@ -359,59 +505,7 @@ section {
 }
 
 #whychooseus .filter-buttons .filter svg {
-  width: 60px;
-}
-
-
-.font18-light {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.font18-bold {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.font20-light {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.font20-bold {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-
-.font24-light {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.font24-bold {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.font38-light {
-  font-size: 42px;
-  font-weight: 400;
-}
-
-.font38-bold {
-  font-size: 42px;
-  font-weight: 700;
-}
-
-.font56-light {
-  font-size: 64px !important;
-  font-weight: 400;
-}
-
-.font56-bold {
-  font-size: 64px !important;
-  font-weight: 700;
+  min-width: 30px;
 }
 
 .textShadow {
@@ -420,4 +514,8 @@ section {
 
 #shadow-host-companion {
   display: none;
+}
+
+.custom-column {
+  width: 25%;
 }
