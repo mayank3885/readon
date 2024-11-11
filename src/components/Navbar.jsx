@@ -29,6 +29,9 @@ const Navbar = () => {
             <Link to="whychooseus" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Why Choose Us?</Link>
             <Link to="benefits" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Benefits</Link>
             <Link to="approach" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Our Approach</Link>
+            <Link to="howdoes" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">How Does It Work?</Link>
+            <Link to="testimonial" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Testimonials</Link>
+            <Link to="awards" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Awards</Link>
           </div>
         </div>
 
@@ -42,9 +45,9 @@ const Navbar = () => {
             <span>IN</span>
           </button>
 
-          <button className="bg-[#FB8500] font18-light text-white px-3 py-1 rounded hover:bg-[#dc933f] transition focus:outline-none" style={{ width: '95px' }}>
+          {/* <button className="bg-[#FB8500] font18-light text-white px-3 py-1 rounded hover:bg-[#dc933f] transition focus:outline-none" style={{ width: '95px' }}>
             Sign In
-          </button>
+          </button> */}
         </div>
 
         {/* Mobile Menu Toggle Button */}
@@ -62,6 +65,9 @@ const Navbar = () => {
             <Link to="whychooseus" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Why Choose Us?</Link>
             <Link to="benefits" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Benefits</Link>
             <Link to="approach" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Our Approach</Link>
+            <Link to="howdoes" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">How Does It Work?</Link>
+            <Link to="testimonial" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Testimonials</Link>
+            <Link to="awards" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Awards</Link>
 
             {/* Mobile Language Selector (Indian Flag) */}
             <div className="flex justify-center">
@@ -74,9 +80,9 @@ const Navbar = () => {
               </button>
             </div>
 
-            <button className="bg-[#FB8500] text-white rounded hover:bg-[#dc933f] transition focus:outline-none px-2 py-1">
+            {/* <button className="bg-[#FB8500] text-white rounded hover:bg-[#dc933f] transition focus:outline-none px-2 py-1">
               Sign In
-            </button>
+            </button> */}
           </div>
         )}
       </nav>

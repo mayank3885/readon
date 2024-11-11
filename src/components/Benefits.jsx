@@ -35,7 +35,7 @@ const Benefits = () => {
             <li className="flex items-start space-x-4">
               <FaCheckCircle className="text-blue-900 text-3xl mt-1" /> {/* Set icon size to 3xl */}
               <div>
-                <p className="font-semibold text-lg font24-light text-[#FB8500]" style={{ textAlign: 'left' }}>Children facing reading difficulties:
+                <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Children facing reading difficulties:
                   <span className='text-black font-normal'> Unlock reading fluency and focus with targeted interventions.</span></p>
               </div>
             </li>
@@ -44,7 +44,7 @@ const Benefits = () => {
             <li className="flex items-start space-x-4">
               <FaCheckCircle className="text-blue-900 text-5xl mt-1" /> {/* Set icon size to 3xl */}
               <div>
-                <p className="font-semibold text-lg font24-light text-[#FB8500]" style={{ textAlign: 'left' }}>Learners with ADHD, dyslexia, or other cognitive challenges:
+                <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Learners with ADHD, dyslexia, or other cognitive challenges:
                   <span className='text-black font-normal'> We provide specialized strategies that cater to diverse learning needs, helping children succeed.</span></p>
               </div>
             </li>
@@ -53,7 +53,7 @@ const Benefits = () => {
             <li className="flex items-start space-x-4">
               <FaCheckCircle className="text-blue-900 text-4xl mt-1" /> {/* Set icon size to 3xl */}
               <div>
-                <p className="font-semibold text-lg font24-light text-[#FB8500]" style={{ textAlign: 'left' }}>Adults looking to improve literacy skills:
+                <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Adults looking to improve literacy skills:
                   <span className='text-black font-normal'> Achieve personal or professional goals through better reading and comprehension.</span></p>
               </div>
             </li>
@@ -62,7 +62,7 @@ const Benefits = () => {
           {/* Call-to-Action Button */}
           <div className="flex items-center justify-start xs:justify-center" style={{ paddingTop: '40px' }}>
             <button
-              className="bg-[#F58220] font24-light hover:bg-[#E07B00] text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
+              className="bg-[#F58220] font20-light hover:bg-[#E07B00] text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
               onClick={() => alert("Assessment Started")}
             >
               Start an Assessment

@@ -37,7 +37,7 @@ const About = () => {
         </h2 >
 
         {/* Body text */}
-        < p className=" mx-auto font24-light leading-relaxed" style={{ color: 'white' }}>
+        < p className=" mx-auto font20-light leading-relaxed" style={{ color: 'white' }}>
           ReadON is an advanced digital cognitive therapy that begins with a comprehensive assessment to identify your child's unique cognitive reading challenges and strengths. This tailored approach ensures that your child receives the targeted neuroplasticity-based support they need to enhance their reading fluency, comprehension, and focus, helping them thrive academically.
         </p >
       </div >

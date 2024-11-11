@@ -9,8 +9,9 @@ const Home = () => {
       style={{
         paddingTop: '80px',
         overflow: 'hidden',
+        // marginBottom: '50px',
       }}
-    >
+    > 
       {/* Left Column: Text Content */}
       <div className="flex flex-col md:flex-row items-center justify-center z-10 relative content-container" style={{ minHeight: '600px' }}>
         <div className="text-center md:text-left w-full md:w-1/2 max-w-2xl px-4 md:px-0 mt-8 md:mt-0">
@@ -22,7 +23,7 @@ const Home = () => {
             </span> <span className='with-readon'>with</span>
             <span className="text-[#FB8500] pl-3 with-readon">ReadON</span>
           </h1>
-          <p className="mb-4 md:mb-8 w-full md:w-3/4 mx-auto md:mx-0 font24-light">
+          <p className="mb-4 md:mb-8 w-full md:w-3/4 mx-auto md:mx-0 font20-light">
             Transform Your Child's Reading Journey with ReadON Digital Cognitive Assessment & Therapies
           </p>
           <button
@@ -31,17 +32,19 @@ const Home = () => {
           >
             Start an Assessment
           </button>
+          
         </div>
-
+        
         {/* Right Column: Hero Image */}
         <div className="w-full md:w-1/2 mt-6 md:mt-0 px-4 md:px-0 flex justify-center md:justify-end">
           <img
             src={hero}
             alt="hero"
-            className="relative"
+            className="relative z-0"
           />
         </div>
       </div>
+      
     </section>
   );
 };

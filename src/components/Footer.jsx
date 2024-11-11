@@ -27,8 +27,8 @@ const Footer = () => {
                     <img src={footer_logo} alt="footer_logo" style={{ width: '70%' }} />
                   </Link>
                 </div>
-                <p className="font20-light address md:pr-24" style={{ lineHeight: '20px' }}>
-                  A Section 8 company dedicated to creating awareness and providing services to people struggling to read and learn.
+                <p className="font20-light address md:pr-24" style={{ lineHeight: '30px' }}>
+                ReadON Arabia is the regional office of ReadON.ai and is owned by Orange Neurosciences Canada. Orange Neurosciences is a next gen ML/AI Technology Company working on the Future of (Spec) EdTech & Medicine.
                 </p>
                 <ul className="mt-5 address-list">
                   <li className="mb-3">
