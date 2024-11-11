@@ -11,6 +11,7 @@ import ReadingJourney from './components/ReadingJourney';
 import Footer from './components/Footer';
 import Awards from './components/Awards';
 import Discover from './components/Discover';
+import Character from './components/Characters';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Testimonials />
         <ReadingJourney />
         <Awards />
+        <Character />
         <Footer />
       </div>
     </div>
