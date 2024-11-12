@@ -2,12 +2,12 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import kidsSafeCertified from '../assets/5.png';
-import patented from '../assets/6.png';
-import mars from '../assets/7.png';
-import eight from '../assets/5.png';
-import nine from '../assets/6.png';
-import ten from '../assets/7.png';
+import tieQuest from '../assets/tie-quest.png';
+import ges from '../assets/ges.png';
+import mindshare from '../assets/mindshare.png';
+import codie from '../assets/codie.png';
+import mars from '../assets/mars.png';
+import kidSafe from '../assets/kidSafe.png';
 
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Fade } from 'react-awesome-reveal';
@@ -15,33 +15,33 @@ import { Fade } from 'react-awesome-reveal';
 const data = [
     {
         id: 1,
-        image: kidsSafeCertified,
-        title: "Kids Safe Certified"
+        image: tieQuest,
+        title: "TieQuest"
     },
     {
         id: 2,
+        image: mindshare,
+        title: "Mindshare Learning Technology"
+    },
+    {
+        id: 3,
+        image: ges,
+        title: "GES Awards Finalist"
+    },
+    {
+        id: 4,
+        image: codie,
+        title: "2018 SIIA Codie Finalist"
+    },
+    {
+        id: 5,
         image: mars,
         title: "Mars"
     },
     {
-        id: 3,
-        image: patented,
-        title: "Patented Property"
-    },
-    {
-        id: 4,
-        image: eight,
-        title: "YouTube image player"
-    },
-    {
-        id: 5,
-        image: nine,
-        title: "Mars"
-    },
-    {
         id: 6,
-        image: ten,
-        title: "Patented Property"
+        image: kidSafe,
+        title: "Kidsafe Certified"
     },
 ];
 

@@ -51,7 +51,7 @@ const WhyChoose = () => {
       {/* Why Choose ReadON Section */}
       <div className="text-white py-8 md:py-24 md:mt-12 relative w-full left-0">
         <div className="max-w-6xl mx-auto text-center" style={{ marginTop: '-10px' }}>
-          <h2 className="font38-bold text-4xl font-semibold mb-8">Why Choose ReadON?</h2>
+          <h2 className="font38-bold text-4xl font-semibold mb-10">Why Choose ReadON?</h2>
 
           {isMobile ? (
             // Dropdown for mobile
@@ -100,7 +100,7 @@ const WhyChoose = () => {
 
             {/* Text Content */}
             <div className="flex-grow">
-              <h3 className="font-semibold mb-4 font38-light" style={{ lineHeight: '40px' }}>{selected}</h3>
+              <h3 className="font-semibold mb-4 mt-4 font38-light" style={{ lineHeight: '40px' }}>{selected}</h3>
               <p className="font20-light">{content[selected].text}</p>
             </div>
           </div>

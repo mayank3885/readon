@@ -146,9 +146,9 @@ const Footer = () => {
           </Row>
         </div>
       </div>
-      <div className="wrapper">
+      <div className="wrapper" style={{ background: '#fff6f4' }}>
         <Row>
-          <Col className="mb-4">
+          <Col className="pb-4">
             <p className="text-center font15">© {new Date().getFullYear()} by Reading Matters Foundation</p>
           </Col>
         </Row>
