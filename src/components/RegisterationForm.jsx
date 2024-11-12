@@ -54,7 +54,7 @@ const RegisterationForm = () => {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'api-key': 'test key'//'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'
+                        'api-key': 'test key'
                     },
                     body: JSON.stringify({
                         name: 'readonathome_leads',
