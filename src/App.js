@@ -19,6 +19,7 @@ function App() {
       <div>
         <Navbar />
         <Home />
+        <div class="wave-container"></div>
         <About />
         <Discover />
         <WhyChoose />
