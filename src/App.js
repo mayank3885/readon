@@ -27,9 +27,9 @@ function App() {
         <Approach />
         <ReadOnAtHome />
         <Testimonials />
+        <Character />
         <ReadingJourney />
         <Awards />
-        <Character />
         <Footer />
       </div>
     </div>
