@@ -128,13 +128,9 @@ section {
     gap: 1px !important;
   }
 
-  #home .content-container {
-    justify-content: space-around;
-  }
-
   #howdoes .howdoes-info {
     margin: 50px auto !important;
-    padding: 0 !important;
+    padding: 50px auto !important;
   }
 
   #howdoes .row {
@@ -143,6 +139,10 @@ section {
 
   #awards .swiper {
     max-width: 100% !important;
+  }
+
+  .swiper {
+    padding: 20px !important;
   }
 }
 
@@ -396,7 +396,6 @@ section {
 
   #home {
     padding-top: 100px !important;
-    height: 100vh !important;
   }
 
   #whychooseus {
@@ -466,8 +465,33 @@ section {
   }
 
   #home {
-    height: 85vh;
     display: flex;
+  }
+
+  .payment-img {
+    display: none;
+  }
+
+  .paymentform {
+    background: url('./assets/readon_form_bg.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .paymentform .formData {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    width: auto;
+    padding: 40px 30px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -541,4 +565,70 @@ section {
   .wave-container::before {
     height: 60px
   }
+}
+
+
+@media(max-height:700px) {
+  .wave-container {
+    margin-top: -290px !important;
+  }
+}
+
+@media(max-height:850px) and (min-height: 700px) {
+  .wave-container {
+    margin-top: -310px !important;
+  }
+}
+
+
+.paymentform .payment-img {
+  background: url('./assets/readon_form_bg.png') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  border-radius: 15px;
+}
+
+.paymentform .payment-img .text-heading {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.paymentform .react-tel-input .form-control {
+  width: 100%;
+}
+
+.paymentform .formData {
+  padding: 0px 30px;
+}
+
+.paymentform .formData input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  font-size: 1.4rem;
+  border-radius: 0;
+}
+
+.paymentform .formData input:focus {
+  box-shadow: none;
+}
+
+.paymentform .formData .proceed-btn {
+  width: 30%;
+  padding: 0px 10px;
+  height: auto;
+  background: #f58220 !important;
+  border: 1px solid #f58220 !important;
+  margin-top: 20px;
+}
+
+.paymentform .formData .proceed-btn:hover {
+  background-color: #f58220;
+  color: #fff;
 }

@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navbar Links */}
-        <div className="hidden md:flex flex-grow justify-center max-w-screen-xl w-full font18-bold" style={{ maxWidth: '1600px' }}>
+        <div className="hidden lg:flex flex-grow justify-center max-w-screen-xl w-full font18-bold" style={{ maxWidth: '1600px' }}>
           <div className="flex space-x-6 justify-center w-full max-w-screen-xl">
             <Link to="home" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Home</Link>
             <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">About</Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
 
         {/* Language Selector (Indian Flag) and Sign In Button */}
-        <div className="hidden md:flex items-center space-x-3">
+        <div className="hidden lg:flex items-center space-x-3">
           <button
             onClick={() => handleLanguageSelect('https://india.example.com')}
             className="flex items-center space-x-1 cursor-pointer text-black hover:text-gray-600 mr-5"
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Toggle Button */}
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} className="focus:outline-none">
             {isMobileMenuOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
           </button>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
         {/* Mobile Navbar Menu */}
         {isMobileMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-40 md:hidden flex flex-col items-center space-y-4 py-4">
+          <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-40 lg:hidden flex flex-col items-center space-y-4 py-4">
             <Link to="home" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Home</Link>
             <Link to="about" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">About</Link>
             <Link to="whychooseus" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Why Choose Us?</Link>

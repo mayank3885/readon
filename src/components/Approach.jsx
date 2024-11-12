@@ -34,31 +34,30 @@ const Approach = () => {
 
   return (
     <section id="approach" className="pt-16">
-      <div className="p-4 md:p-8">
+      <div className="p-6 md:p-8">
         <div className="max-w-6xl mx-auto">
           <h2
-            className="text-2xl font-semibold text-black text-center mb-6 font38-bold"
+            className="text-2xl font-semibold text-black text-center mb-10 font38-bold"
             style={{ lineHeight: '30px' }}
           >
             Our Comprehensive Approach
           </h2>
-          <div className="space-y-8"> {/* Increased space between sections */}
+          <div className="space-y-10"> {/* Increased space between sections */}
             {content.map((item) => (
               <div
                 key={item.id}
-                className={`rounded-lg overflow-hidden shadow-md bg-white border-black
-                  }`}
+                className={`rounded-lg overflow-hidden shadow-md bg-white border-black}`}
                 style={{
                   borderRadius: '10px',
                   boxShadow: '0 27px 20px -19px #ff977e4f',
-                  background: '#F8F5F4'
+                  background: '#F8F5F4',
                 }}
               >
                 {/* Header with title and toggle button */}
                 <div
                   onClick={() => toggleSection(item.id)}
                   className="flex justify-between items-center px-6 py-4 cursor-pointer font24-bold"
-                  style={{ background: '#F8F5F4' }}
+                  style={{ background: '#F8F5F4', marginBottom: '-10px' }}
                 >
                   <h3>
                     {String(item.id).padStart(2, '0')} {item.title}

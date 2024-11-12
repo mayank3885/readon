@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { FaPuzzlePiece, FaUsers, FaChartLine } from 'react-icons/fa'; // Import icons
+import { FaPuzzlePiece, FaUsers, FaChartLine, FaAdjust } from 'react-icons/fa'; // Import icons
 import whychoose1 from "../assets/why-choose-ReadON-1.png";
 import whychoose2 from "../assets/why-choose-ReadON-2.png";
 import whychoose3 from "../assets/why-choose-ReadON-3.gif";
+import whychoose4 from "../assets/why-choose-readON-4 .png";
 
 const WhyChoose = () => {
   const [selected, setSelected] = useState('ReadON understands the needs');
@@ -30,9 +31,9 @@ const WhyChoose = () => {
       text: 'Experience noticeable improvements in just 3-4 months, with measurable progress in reading skills that you can track at home.',
       image: whychoose2
     },
-    'Proven Results 2': {
-      text: 'Experience noticeable improvements in just 3-4 months, with measurable progress in reading skills that you can track at home.',
-      image: whychoose3
+    'Affordable Cognitive Support:': {
+      text: 'ReadON provides affordable, high-quality cognitive therapy, making it accessible to more families, especially those with neurodiverse children. Its budget-friendly digital approach ensures effective support without financial strain, bridging the gap between need and access.',
+      image: whychoose4
     }
   };
 
@@ -41,7 +42,7 @@ const WhyChoose = () => {
     'ReadON understands the needs': <FaPuzzlePiece className="text-3xl mr-2" />,
     'Personalized Intervention': <FaUsers className="text-3xl mr-2" />,
     'Proven Results': <FaChartLine className="text-3xl mr-2" />,
-    'Proven Results 2': <FaChartLine className="text-3xl mr-2" />
+    'Affordable Cognitive Support:': <FaAdjust className="text-3xl mr-2" />
   };
 
   return (
@@ -55,7 +56,7 @@ const WhyChoose = () => {
           {isMobile ? (
             // Dropdown for mobile
             <select
-              className="w-full p-3 rounded-2xl font24-bold bg-white text-orange-500 custom-select"
+              className="w-full p-3 rounded-2xl font24-bold bg-white text-orange-500 custom-select mb-8"
               value={selected}
               onChange={(e) => setSelected(e.target.value)}
             >

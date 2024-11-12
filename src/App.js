@@ -12,26 +12,36 @@ import Footer from './components/Footer';
 import Awards from './components/Awards';
 import Discover from './components/Discover';
 import Character from './components/Characters';
+import { Route, Routes } from 'react-router-dom';
+import RegisterationForm from './components/RegisterationForm';
 
 function App() {
   return (
     <div>
-      <div>
-        <Navbar />
-        <Home />
-        <div class="wave-container"></div>
-        <About />
-        <Discover />
-        <WhyChoose />
-        <Benefits />
-        <Approach />
-        <ReadOnAtHome />
-        <Testimonials />
-        <Character />
-        <ReadingJourney />
-        <Awards />
-        <Footer />
-      </div>
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <Navbar />
+              <Home />
+              <div class="wave-container"></div>
+              <About />
+              <Discover />
+              <WhyChoose />
+              <Benefits />
+              <Approach />
+              <ReadOnAtHome />
+              <Testimonials />
+              <Character />
+              <ReadingJourney />
+              <Awards />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/form" element={<RegisterationForm />} />
+      </Routes>
     </div>
   );
 }

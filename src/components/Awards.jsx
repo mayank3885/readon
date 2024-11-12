@@ -2,9 +2,12 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import kidsSafeCertified from '../assets/kidSafeCertified.png';
-import patented from '../assets/PatentedProperty.png';
-import mars from '../assets/MaRS.png';
+import kidsSafeCertified from '../assets/5.png';
+import patented from '../assets/6.png';
+import mars from '../assets/7.png';
+import eight from '../assets/5.png';
+import nine from '../assets/6.png';
+import ten from '../assets/7.png';
 
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Fade } from 'react-awesome-reveal';
@@ -27,17 +30,17 @@ const data = [
     },
     {
         id: 4,
-        image: patented,
+        image: eight,
         title: "YouTube image player"
     },
     {
         id: 5,
-        image: mars,
+        image: nine,
         title: "Mars"
     },
     {
         id: 6,
-        image: patented,
+        image: ten,
         title: "Patented Property"
     },
 ];
@@ -67,7 +70,7 @@ export default function Awards() {
             {/* Heading section */}
             <div className="section">
                 <Fade damping={0.4} triggerOnce={true}>
-                    <h2 className="font38-bold font-semibold text-[#003049] text-center">
+                    <h2 className="font38-bold font-semibold text-center" style={{ color: 'hsl(240deg 2.76% 22.88%)' }}>
                         Awards and Recognitions
                     </h2>
                 </Fade>
@@ -91,7 +94,7 @@ export default function Awards() {
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
                         <div className="video-container flex items-center" style={{ flexDirection: 'column' }}>
-                            <img src={item.image} alt={item.title} style={{ maxWidth: '200px' }} />
+                            <img src={item.image} alt={item.title} style={{ maxWidth: '200px' }} />{item.title}
                         </div>
                     </SwiperSlide>
                 ))}

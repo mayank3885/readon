@@ -19,6 +19,7 @@ const Character = () => {
                     src={mobileImage}
                     alt="Responsive content"
                     className="w-full h-auto"
+                    style={{ marginBottom: '-2px' }}
                 />
             </picture>
         </div>

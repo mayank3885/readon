@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import youtubethumbnail from "../assets/youtube-thumbnail.jpg";
+import youtubethumbnail from "../assets/youtube-thumbnail.jpeg";
+import { useNavigate } from 'react-router-dom';
 
 const Discover = () => {
     const [showVideo, setShowVideo] = useState(false);
+    const navigate = useNavigate()
 
     return (
         <section id='discover' className='bg-white'>
@@ -10,14 +12,14 @@ const Discover = () => {
             <div className="bg-white md:py-16 py-12 px-4 flex justify-center">
                 <div className="max-w-7xl mx-auto flex items-center gap-15 justify-center container">
                     <div className="text-left">
-                        <h2 className="text-6xl w-full md:w-3/4 font-bold text-blue-900 mb-4 text-center md:text-left font56-bold">
+                        <h2 className="text-6xl w-full md:w-3/4 font-bold mb-4 text-center md:text-left font56-bold" style={{ color: 'hsl(240deg 2.76% 22.88%)' }}>
                             Discover How <span className="text-orange-500">ReadON</span> Works
                         </h2>
                         {/* The Start button is here in desktop */}
                         <div className="flex items-center pt-2 md:pt-0 md:ml-5">
                             <button
                                 className="bg-[#F58220] hover:bg-[#E07B00] font24-light text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
-                                onClick={() => alert("Assessment Started")}
+                                onClick={() => navigate('/form')}
                             >
                                 Start an Assessment
                             </button>
@@ -32,7 +34,7 @@ const Discover = () => {
                                 backgroundImage: `url(${youtubethumbnail})`,
                                 borderRadius: '100px',
                                 border: '0',
-                                boxShadow: 'grey 12px 15px 17px 7px'
+                                boxShadow: '#ff977e4f 12px 15px 17px 7px'
                             }}
                         >
                             <button

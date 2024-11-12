@@ -10,16 +10,19 @@ import cognitiveTherapy from '../assets/cognitive-therapy.png';
 
 // animation
 import { Fade } from 'react-awesome-reveal';
+import { useNavigate } from 'react-router-dom';
 
 const ReadOnAtHome = () => {
+    const navigate = useNavigate()
+
     return (
         <div id="howdoes" className="boxImg">
             {/* row section */}
             <div className="howdoes-info">
-                <h2 className="font38-bold font-semibold text-[#003049] text-center">How Does ReadON at Home Work?</h2>
+                <h2 className="font38-bold font-semibold text-[#000000] text-center">How Does ReadON at Home Work?</h2>
                 <Fade cascade damping={0.4} triggerOnce={true}>
                     <Row>
-                        <Col xs={12} sm={6} md={6} lg={3} className="mb-4 custom-column">
+                        <Col xs={12} sm={6} md={6} lg={3} className="mb-6 custom-column">
                             <div className="box-item">
                                 <div className="box-img">
                                     <div className="arrow dotted" style={{ width: '130px' }}></div>
@@ -100,7 +103,7 @@ const ReadOnAtHome = () => {
                         <div className="flex items-center justify-start xs:justify-center" style={{ paddingTop: '40px' }}>
                             <button
                                 className="bg-[#F58220] font24-light hover:bg-[#E07B00] text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
-                                onClick={() => alert("Assessment Started")}
+                                onClick={() => navigate('/form')}
                             >
                                 Start an Assessment
                             </button>

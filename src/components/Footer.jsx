@@ -17,8 +17,7 @@ const Footer = () => {
     <>
       <div id="footer">
         {/* know section */}
-        <div className="wrapper mt-10">
-          <hr className='border-black' />
+        <div className="wrapper mt-10" style={{ background: '#fff6f4' }}>
           <Row className="flex justify-content-center" style={{ padding: '40px', borderRadius: '20px' }}>
             <Col md={12} lg={4} style={{ width: '40%' }}>
               <Fade direction="up" cascade damping={0.3} triggerOnce={true}>
@@ -28,7 +27,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p className="font20-light address md:pr-24" style={{ lineHeight: '30px' }}>
-                ReadON Arabia is the regional office of ReadON.ai and is owned by Orange Neurosciences Canada. Orange Neurosciences is a next gen ML/AI Technology Company working on the Future of (Spec) EdTech & Medicine.
+                  ReadON Arabia is the regional office of ReadON.ai and is owned by Orange Neurosciences Canada. Orange Neurosciences is a next gen ML/AI Technology Company working on the Future of (Spec) EdTech & Medicine.
                 </p>
                 <ul className="mt-5 address-list">
                   <li className="mb-3">

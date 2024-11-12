@@ -1,7 +1,10 @@
 import React from 'react';
 import hero from "../assets/hero.png";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate()
+
   return (
     <section
       id="home"
@@ -9,13 +12,12 @@ const Home = () => {
       style={{
         paddingTop: '80px',
         overflow: 'hidden',
-        // marginBottom: '50px',
       }}
     >
       {/* Left Column: Text Content */}
-      <div className="flex flex-col md:flex-row items-center justify-center z-10 relative content-container" style={{ minHeight: '600px' }}>
+      <div className="flex flex-col md:flex-row items-center md:justify-center z-10 relative content-container">
         <div className="text-center md:text-left w-full md:w-1/2 max-w-2xl px-4 md:px-0 mt-8 md:mt-0">
-          <h1 className="font56-bold md:text-[3.5rem] font-extrabold text-[#023047] mb-4 leading-tight">
+          <h1 className="font56-bold md:text-[3.5rem] font-extrabold mb-4 leading-tight" style={{ color: 'hsl(240deg 2.76% 22.88%)' }}>
             <span className="flip-text block md:inline-block">
               <span>Read Better</span>
               <span>Learn Faster</span>
@@ -28,7 +30,7 @@ const Home = () => {
           </p>
           <button
             className="bg-[#F58220] font24-light hover:bg-[#E07B00] text-white font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
-            onClick={() => alert("Assessment Started")}
+            onClick={() => navigate('/form')}
           >
             Start an Assessment
           </button>
