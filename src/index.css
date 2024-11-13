@@ -548,13 +548,13 @@ section {
 }
 
 
-@media(max-height:700px) {
+@media(max-height:700px) and (max-width: 1100px) {
   .wave-container {
     margin-top: -50px !important;
   }
 }
 
-@media(max-height:850px) and (min-height: 700px) {
+@media(max-height:850px) and (min-height: 700px) and (max-width: 1100px) {
   .wave-container {
     margin-top: -60px !important;
   }

@@ -4,7 +4,7 @@ import bottomFullImage from "../assets/2nd-Section.png";
 
 const About = () => {
   return (
-    <section id="about" className="text-black md:pt-[0px]" style={{
+    <section id="about" className="text-black pt-8 md:pt-[0px]" style={{
       // marginTop: '-70px',
       background: '#f58220',
       position: 'relative',
