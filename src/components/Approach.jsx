@@ -1,5 +1,6 @@
 // Approach.js
 import React, { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 const Approach = () => {
   // Track which section is expanded
@@ -36,49 +37,51 @@ const Approach = () => {
     <section id="approach" className="pt-16">
       <div className="p-6 md:p-8">
         <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-2xl font-semibold text-black text-center mb-10 font38-bold"
-            style={{ lineHeight: '30px' }}
-          >
-            Our Comprehensive Approach
-          </h2>
-          <div className="space-y-10"> {/* Increased space between sections */}
-            {content.map((item) => (
-              <div
-                key={item.id}
-                className={`rounded-lg overflow-hidden shadow-md bg-white border-black}`}
-                style={{
-                  borderRadius: '10px',
-                  boxShadow: '0 27px 20px -19px #ff977e4f',
-                  background: '#F8F5F4',
-                }}
-              >
-                {/* Header with title and toggle button */}
+          <Fade direction="up" cascade damping={0.5} triggerOnce={true}>
+            <h2
+              className="text-2xl font-semibold text-black text-center mb-10 font38-bold"
+              style={{ lineHeight: '30px' }}
+            >
+              Our Comprehensive Approach
+            </h2>
+            <div className="space-y-10"> {/* Increased space between sections */}
+              {content.map((item) => (
                 <div
-                  onClick={() => toggleSection(item.id)}
-                  className="flex justify-between items-center px-6 py-4 cursor-pointer font24-bold"
-                  style={{ background: '#F8F5F4', marginBottom: '-10px' }}
+                  key={item.id}
+                  className={`rounded-lg overflow-hidden shadow-md bg-white border-black}`}
+                  style={{
+                    borderRadius: '10px',
+                    boxShadow: '0 27px 20px -19px #ff977e4f',
+                    background: '#F8F5F4',
+                  }}
                 >
-                  <h3>
-                    {String(item.id).padStart(2, '0')} {item.title}
-                  </h3>
-                  <span>
-                    {expandedSection === item.id ? '-' : '+'}
-                  </span>
-                </div>
-                {/* Content description */}
-                {expandedSection === item.id && (
+                  {/* Header with title and toggle button */}
                   <div
-                    className="px-6 py-4"
-                    style={{ fontSize: '14pt' }}
+                    onClick={() => toggleSection(item.id)}
+                    className="flex justify-between items-center px-6 py-4 cursor-pointer font24-bold"
+                    style={{ background: '#F8F5F4', marginBottom: '-10px' }}
                   >
-                    <hr className="border-black mb-4" /> {/* Added bottom margin */}
-                    <p style={{ textAlign: 'left' }} className='font20-bold'>{item.description}</p>
+                    <h3>
+                      {String(item.id).padStart(2, '0')} {item.title}
+                    </h3>
+                    <span>
+                      {expandedSection === item.id ? '-' : '+'}
+                    </span>
                   </div>
-                )}
-              </div>
-            ))}
-          </div>
+                  {/* Content description */}
+                  {expandedSection === item.id && (
+                    <div
+                      className="px-6 py-4"
+                      style={{ fontSize: '14pt' }}
+                    >
+                      <hr className="border-black mb-4" /> {/* Added bottom margin */}
+                      <p style={{ textAlign: 'left' }} className='font20-bold'>{item.description}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </Fade>
         </div>
       </div>
     </section >

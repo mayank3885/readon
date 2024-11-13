@@ -20,7 +20,7 @@ const ReadOnAtHome = () => {
             {/* row section */}
             <div className="howdoes-info">
                 <h2 className="font38-bold font-semibold text-[#000000] text-center">How Does ReadON at Home Work?</h2>
-                <Fade cascade damping={0.4} triggerOnce={true}>
+                <Fade direction='up' damping={0.4} triggerOnce={true}>
                     <Row>
                         <Col xs={12} sm={6} md={6} lg={3} className="mb-6 custom-column">
                             <div className="box-item">

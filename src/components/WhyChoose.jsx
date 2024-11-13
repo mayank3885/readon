@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { FaPuzzlePiece, FaUsers, FaChartLine, FaAdjust } from 'react-icons/fa'; // Import icons
+import { FaPuzzlePiece, FaUsers, FaChartLine } from 'react-icons/fa'; // Import icons
 import whychoose1 from "../assets/why-choose-ReadON-1.png";
 import whychoose2 from "../assets/why-choose-ReadON-2.png";
 import whychoose3 from "../assets/why-choose-ReadON-3.gif";
 import whychoose4 from "../assets/why-choose-readON-4.png";
+import { FaHandHoldingDollar } from 'react-icons/fa6';
+import { Fade } from 'react-awesome-reveal';
 
 const WhyChoose = () => {
   const [selected, setSelected] = useState('ReadON understands the needs');
@@ -42,68 +44,70 @@ const WhyChoose = () => {
     'ReadON understands the needs': <FaPuzzlePiece className="text-3xl mr-2" />,
     'Personalized Intervention': <FaUsers className="text-3xl mr-2" />,
     'Proven Results': <FaChartLine className="text-3xl mr-2" />,
-    'Affordable Cognitive Support:': <FaAdjust className="text-3xl mr-2" />
+    'Affordable Cognitive Support:': <FaHandHoldingDollar className="text-3xl mr-2" />
   };
 
   return (
     <section id='whychooseus' style={{ background: 'rgb(245, 130, 32)' }}>
-
       {/* Why Choose ReadON Section */}
       <div className="text-white py-8 md:py-24 md:mt-12 relative w-full left-0">
         <div className="max-w-6xl mx-auto text-center" style={{ marginTop: '-10px' }}>
-          <h2 className="font38-bold text-4xl font-semibold mb-10">Why Choose ReadON?</h2>
+          <Fade direction="up" cascade damping={0.4} triggerOnce={true}>
+            <h2 className="font38-bold text-4xl font-semibold mb-10">Why Choose ReadON?</h2>
 
-          {isMobile ? (
-            // Dropdown for mobile
-            <select
-              className="w-full p-3 rounded-2xl font24-bold bg-white text-orange-500 custom-select mb-8"
-              value={selected}
-              onChange={(e) => setSelected(e.target.value)}
-            >
-              {Object.keys(content).map((item) => (
-                <option key={item} value={item}>
-                  {item}
-                </option>
-              ))}
-            </select>
-          ) : (
-            // Button grid for larger screens
-            <div className="grid grid-cols-2 gap-8 lg:grid-cols-2 xl:grid-cols-4 mb-8 button-container" style={{ justifyItems: 'center' }}>
-              {Object.keys(content).map((item, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelected(item)}
-                  className={`filter-buttons rounded-2xl font20-bold font-bold border-2 ${selected === item ? 'bg-white text-orange-500' : 'bg-[rgb(245, 130, 32)] hover:bg-orange-400'
-                    }`}
-                >
-                  <div className="filter">
-                    {icons[item]} {/* Render the appropriate icon */}
-                    <div className="flex flex-col justify-center">
-                      <span className='justify-self-center'>{item}</span> {/* First part of text */}
+            {isMobile ? (
+              // Dropdown for mobile
+              <select
+                className="w-full p-3 rounded-2xl font24-bold bg-white text-orange-500 custom-select mb-8"
+                value={selected}
+                onChange={(e) => setSelected(e.target.value)}
+              >
+                {Object.keys(content).map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              // Button grid for larger screens
+              <div className="grid grid-cols-2 gap-8 lg:grid-cols-2 xl:grid-cols-4 mb-8 button-container" style={{ justifyItems: 'center' }}>
+                {Object.keys(content).map((item, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelected(item)}
+                    className={`filter-buttons rounded-2xl font20-bold font-bold border-2 ${selected === item ? 'bg-white text-orange-500' : 'bg-[rgb(245, 130, 32)] hover:bg-orange-400'
+                      }`}
+                  >
+                    <div className="filter">
+                      {icons[item]} {/* Render the appropriate icon */}
+                      <div className="flex flex-col justify-center">
+                        <span className='justify-self-center'>{item}</span> {/* First part of text */}
+                      </div>
                     </div>
-                  </div>
-                </button>
-              ))}
-            </div>
-          )}
+                  </button>
+                ))}
+              </div>
+            )}
 
-          {/* Selected Content with Image */}
-          <div className="flex flex-col md:flex-row items-center text-[#f4f3f1] p-0 md:p-6 pl-0 text-left relative rounded-md gap-2 md:gap-8">
-            {/* Background Image Container */}
-            <div
-              className="w-full md:w-1/2 flex-shrink-0 rounded-lg min-h-[350px] relative flex items-center justify-center bg-cover bg-center "
-              style={{
-                backgroundImage: `url(${content[selected].image})`,
-                backgroundSize: "150%"
-              }}
-            ></div>
+            {/* Selected Content with Image */}
+            <div className="flex flex-col md:flex-row items-center text-[#f4f3f1] p-0 md:p-6 pl-0 text-left relative rounded-md gap-2 md:gap-8">
+              {/* Background Image Container */}
+              <div
+                className="w-full md:w-1/2 flex-shrink-0 rounded-lg min-h-[350px] relative flex items-center justify-center bg-cover bg-center "
+                style={{
+                  backgroundImage: `url(${content[selected].image})`,
 
-            {/* Text Content */}
-            <div className="flex-grow">
-              <h3 className="font-semibold mb-4 mt-4 font38-light" style={{ lineHeight: '40px' }}>{selected}</h3>
-              <p className="font20-light">{content[selected].text}</p>
+                  maxWidth: '450px'
+                }}
+              ></div>
+
+              {/* Text Content */}
+              <div className="flex-grow">
+                <h3 className="font-semibold mb-4 mt-4 font38-light" style={{ lineHeight: '40px' }}>{selected}</h3>
+                <p className="font20-light">{content[selected].text}</p>
+              </div>
             </div>
-          </div>
+          </Fade>
         </div>
       </div>
 

@@ -26,9 +26,7 @@ const RegisterationForm = () => {
 
     const handleChange = (value, country, event) => {
         const { name } = event.target;
-        // const { name, value } = e.target; 
         if (name === 'pmobile') {
-            // let splitMobile = value.split(country.dialCode);
             setFormData({
                 ...formData,
                 pmobile: value,
@@ -37,8 +35,6 @@ const RegisterationForm = () => {
         } else {
             setFormData({ ...formData, [name]: value });
         }
-        // setFormData({ ...formData, [e.target.name]: e.target.value });
-        // Reset error message for the field being edited
         setFormErrors({ ...formErrors, [name]: "" });
     };
 
@@ -75,14 +71,13 @@ const RegisterationForm = () => {
                     setSpinner(false);
                     console.log("mail send");
                     setSuccess('Form submitted successfully!');
-                    const stripe = 'https://buy.stripe.com/5kA4iB6De2EJ3ZucN9';
+                    const stripe = 'https://buy.stripe.com/cN22at6DebbfdA44gE';
                     window.location.href = stripe;
                 } else {
                     console.log("mail Failed", responseData);
                     if (responseData.code === 'duplicate_parameter') {
-                        // setSuccess('This contact already exists.');
                         setSuccess('Form submitted successfully!');
-                        const stripe = 'https://buy.stripe.com/5kA4iB6De2EJ3ZucN9';
+                        const stripe = 'https://buy.stripe.com/cN22at6DebbfdA44gE';
                         window.location.href = stripe;
                     } else {
                         console.log(response.message || 'An error occurred');
@@ -128,11 +123,6 @@ const RegisterationForm = () => {
             newErrors.pmobile = 'Invalid phone number format (must be 10 digits)';
             valid = false;
         }
-
-        // if (formData.grade === "") {
-        //   newErrors.grade = "Please select a grade";
-        //   valid = false;
-        // }
 
         if (formData.grade.length === 0) {
             newErrors.grade = "Please select at least one grade";

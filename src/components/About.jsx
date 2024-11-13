@@ -1,29 +1,33 @@
 import React from 'react';
 import bottomFullImage from "../assets/2nd-Section.png";
+import { Fade } from 'react-awesome-reveal';
 // import wave3 from "../assets/wave5.png";
 
 const About = () => {
   return (
-    <section id="about" className="text-black pt-8 md:pt-[0px]" style={{
-      // marginTop: '-70px',
+    <section id="about" className="text-black md:pt-16 pt-8 pb-12 md:pb-0" style={{
       background: '#f58220',
       position: 'relative',
       zIndex: '15',
     }}>
       {/* Text Content Container */}
-      < div className="container mx-auto pt-8 pb-6 text-center">
-        {/* Title */}
-        < h2
-          className="font-bold font38-bold mb-8 leading-tight max-w-4xl mx-auto"
-          style={{ color: 'white' }}
-        >
-          We understand the challenges children face in developing strong reading skills.
-        </h2 >
+      < div
+        className="container mx-auto pb-6 text-center"
+      >
+        <Fade direction="up" cascade damping={0.2} triggerOnce={true}>
+          {/* Title */}
+          < h2
+            className="font-bold font38-bold mb-8 leading-tight max-w-4xl mx-auto"
+            style={{ color: 'white' }}
+          >
+            We understand the challenges children face in developing strong reading skills.
+          </h2 >
 
-        {/* Body text */}
-        < p className=" mx-auto font20-light leading-relaxed" style={{ color: 'white' }}>
-          ReadON is an advanced digital cognitive therapy that begins with a comprehensive assessment to identify your child's unique cognitive reading challenges and strengths. This tailored approach ensures that your child receives the targeted neuroplasticity-based support they need to enhance their reading fluency, comprehension, and focus, helping them thrive academically.
-        </p >
+          {/* Body text */}
+          < p className=" mx-auto font20-light leading-relaxed" style={{ color: 'white' }}>
+            ReadON is an advanced digital cognitive therapy that begins with a comprehensive assessment to identify your child's unique cognitive reading challenges and strengths. This tailored approach ensures that your child receives the targeted neuroplasticity-based support they need to enhance their reading fluency, comprehension, and focus, helping them thrive academically.
+          </p >
+        </Fade>
       </div >
 
       {/* Image Container */}

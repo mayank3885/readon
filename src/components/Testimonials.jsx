@@ -50,37 +50,39 @@ export default function Testimonials() {
         <div id="testimonial">
             {/* heading section */}
             <div className="section mb30">
-                <Fade damping={0.4} triggerOnce={true}>
+                <Fade direction='up' damping={0.4} triggerOnce={true}>
                     <h2 className='font38-bold mb-6 md:mb-12 font-semibold text-[#000000] text-center' >Testimonials</h2>
                 </Fade>
             </div>
             {/* row section */}
-            <Swiper
-                centeredSlides={true}
-                autoplay={{
-                    delay: 3500,
-                    disableOnInteraction: false,
-                }}
-                loop={true}
-                breakpoints={breakpoints}   // Adjusts based on screen width
-                navigation={true}
-                modules={[Navigation, Autoplay]}
-                className="testimonials"
-            >
-                {data.map((item) => (
-                    <SwiperSlide key={item.id}>
-                        <div className="video-container">
-                            <iframe
-                                width="100%"
-                                height="300px"
-                                src={item.video}
-                                title={item.title}
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            <Fade direction='up' damping={0.4} triggerOnce={true}>
+                <Swiper
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    breakpoints={breakpoints}   // Adjusts based on screen width
+                    navigation={true}
+                    modules={[Navigation, Autoplay]}
+                    className="testimonials"
+                >
+                    {data.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <div className="video-container">
+                                <iframe
+                                    width="100%"
+                                    height="300px"
+                                    src={item.video}
+                                    title={item.title}
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </Fade>
             <style jsx>{`
                 .swiper-button-next,
                 .swiper-button-prev {

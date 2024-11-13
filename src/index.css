@@ -44,6 +44,7 @@ code {
   }
 }
 
+
 @media (max-width: 768px) {
   :root {
     --scale-factor: 0.7;
@@ -144,6 +145,10 @@ section {
   .swiper {
     padding: 20px !important;
   }
+
+  /* .wave-container {
+    margin-top: 200px !important;
+  } */
 }
 
 #howdoes {
@@ -270,7 +275,8 @@ section {
   border-width: 0 3px 3px 0;
   width: 0px;
   height: 0px;
-  margin-right: 105px;
+  margin-right: 100px;
+  margin-top: 50px;
 }
 
 .btn-shadow {
@@ -402,13 +408,36 @@ section {
     margin-top: 20px !important;
   }
 
-  #about {
+  /* #about {
     padding-bottom: 70px !important;
+  } */
+
+  /* #about .container {
+    margin-top: -70px !important;
+  } */
+
+  /* .wave-container {
+    margin-top: -100px !important;
+  } */
+
+  #home .content-container {
+    display: flex !important;
+    width: 100% !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    max-width: 100% !important;
   }
 
-  #about .container {
-    margin-top: -70px !important;
+  #home img {
+    min-width: 400px !important;
   }
+}
+
+#home .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
 }
 
 #whychooseus {
@@ -473,7 +502,7 @@ section {
   }
 
   .paymentform {
-    background: url('./assets/readon_form_bg.png') no-repeat center;
+    background: url('./assets/readon_form_bg.jpeg') no-repeat center;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -495,6 +524,16 @@ section {
   }
 }
 
+#home img {
+  margin-bottom: -30px;
+  min-width: 350px !important;
+}
+
+/* @media screen and (max-width: 1500px) and (min-width: 1200px) {
+  .wave-container {
+    margin-top: -130px !important;
+  }
+} */
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .custom-column {
@@ -504,6 +543,23 @@ section {
   .arrow {
     display: none;
   }
+
+  #home {
+    margin-bottom: -10px !important;
+    padding-top: 0px !important;
+  }
+
+  #home img {
+    object-fit: cover !important;
+    min-width: 600px !important;
+    margin-bottom: -100px;
+  }
+
+
+  /* 
+  .wave-container {
+    margin-top: 42px !important;
+  } */
 }
 
 #whychooseus .filter-buttons {
@@ -540,35 +596,38 @@ section {
   width: 25%;
 }
 
+/* 
 .wave-container {
-  margin-top: -186px;
+  margin-top: -190px;
+  margin-bottom: -2px;
   z-index: 12;
   background-color: transparent;
   position: relative;
-}
+} */
 
 
-@media(max-height:700px) and (max-width: 1100px) {
+/* @media(max-height:700px) and (max-width: 1100px) {
   .wave-container {
-    margin-top: -50px !important;
+    margin-top: -40px !important;
   }
 }
 
 @media(max-height:850px) and (min-height: 700px) and (max-width: 1100px) {
   .wave-container {
-    margin-top: -60px !important;
+    margin-top: -35px !important;
   }
-}
+} */
 
 @media(max-height:1100px) and (min-height: 851px) and (max-width:1100px) {
-  .wave-container {
-    margin-top: -60px !important;
-  }
+
+
+  /* .wave-container {
+    margin-top: -43px !important;
+  } */
 }
 
-
 .paymentform .payment-img {
-  background: url('./assets/readon_form_bg.png') no-repeat center;
+  background: url('./assets/readon_form_bg.jpeg') no-repeat center;
   background-size: cover;
   height: 100vh;
   position: relative;

@@ -76,29 +76,31 @@ export default function Awards() {
                 </Fade>
             </div>
             {/* Row section */}
-            <Swiper
-                centeredSlides={true}
-                autoplay={{
-                    delay: 1500,
-                    disableOnInteraction: false,
-                }}
-                slidesPerView={5}
-                spaceBetween={20}
-                loop={true}
-                breakpoints={breakpoints}
-                navigation={true}
-                modules={[Navigation, Autoplay]}
-                className="awards"
-                style={{ maxWidth: '80%' }}
-            >
-                {data.map((item) => (
-                    <SwiperSlide key={item.id}>
-                        <div className="video-container flex items-center" style={{ flexDirection: 'column' }}>
-                            <img src={item.image} alt={item.title} style={{ maxWidth: '200px' }} />{item.title}
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            <Fade direction="up" cascade damping={0.5} triggerOnce={true}>
+                <Swiper
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 1500,
+                        disableOnInteraction: false,
+                    }}
+                    slidesPerView={5}
+                    spaceBetween={20}
+                    loop={true}
+                    breakpoints={breakpoints}
+                    navigation={true}
+                    modules={[Navigation, Autoplay]}
+                    className="awards"
+                    style={{ maxWidth: '80%' }}
+                >
+                    {data.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <div className="video-container flex items-center" style={{ flexDirection: 'column' }}>
+                                <img src={item.image} alt={item.title} style={{ maxWidth: '200px' }} />
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </Fade>
         </div>
     );
 }
