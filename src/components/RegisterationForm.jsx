@@ -54,10 +54,10 @@ const RegisterationForm = () => {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'api-key': 'test key'
+                        'api-key': process.env.REACT_APP_BREVO_KEY
                     },
                     body: JSON.stringify({
-                        name: 'readonathome_leads',
+                        name: 'ReadON_Arabia',
                         email: formData.pemail,
                         attributes: {
                             CHILDNAME: formData.cname,
@@ -75,15 +75,15 @@ const RegisterationForm = () => {
                     setSpinner(false);
                     console.log("mail send");
                     setSuccess('Form submitted successfully!');
-                    const stripe = 'https://buy.stripe.com/5kA4iB6De2EJ3ZucN9';
-                    window.location.href = stripe;
+                    // const stripe = 'https://buy.stripe.com/5kA4iB6De2EJ3ZucN9';
+                    // window.location.href = stripe;
                 } else {
                     console.log("mail Failed", responseData);
                     if (responseData.code === 'duplicate_parameter') {
                         // setSuccess('This contact already exists.');
                         setSuccess('Form submitted successfully!');
-                        const stripe = 'https://buy.stripe.com/5kA4iB6De2EJ3ZucN9';
-                        window.location.href = stripe;
+                        // const stripe = 'https://buy.stripe.com/5kA4iB6De2EJ3ZucN9';
+                        // window.location.href = stripe;
                     } else {
                         console.log(response.message || 'An error occurred');
                     }
