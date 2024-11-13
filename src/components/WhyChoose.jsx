@@ -3,7 +3,7 @@ import { FaPuzzlePiece, FaUsers, FaChartLine, FaAdjust } from 'react-icons/fa'; 
 import whychoose1 from "../assets/why-choose-ReadON-1.png";
 import whychoose2 from "../assets/why-choose-ReadON-2.png";
 import whychoose3 from "../assets/why-choose-ReadON-3.gif";
-import whychoose4 from "../assets/why-choose-readON-4 .png";
+import whychoose4 from "../assets/why-choose-readON-4.png";
 
 const WhyChoose = () => {
   const [selected, setSelected] = useState('ReadON understands the needs');
