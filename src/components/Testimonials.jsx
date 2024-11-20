@@ -47,7 +47,7 @@ export default function Testimonials() {
     };
 
     return (
-        <div id="testimonial">
+        <div id="testimonial" className='width-1800 equal-width' style={{ margin: 'auto' }}>
             {/* heading section */}
             <div className="section mb30">
                 <Fade direction='up' damping={0.4} triggerOnce={true}>
@@ -64,7 +64,7 @@ export default function Testimonials() {
                     }}
                     loop={true}
                     breakpoints={breakpoints}   // Adjusts based on screen width
-                    navigation={true}
+                    navigation={false}
                     modules={[Navigation, Autoplay]}
                     className="testimonials"
                 >
@@ -83,17 +83,6 @@ export default function Testimonials() {
                     ))}
                 </Swiper>
             </Fade>
-            <style jsx>{`
-                .swiper-button-next,
-                .swiper-button-prev {
-                    color: black; /* Change the arrow color to black */
-                }
-
-                .swiper-button-next:hover,
-                .swiper-button-prev:hover {
-                    color: #333; /* Optionally, change the color on hover */
-                }
-            `}</style>
         </div>
     );
 }

@@ -6,7 +6,7 @@ import tieQuest from '../assets/tie-quest.png';
 import ges from '../assets/ges.png';
 import mindshare from '../assets/mindshare.png';
 import codie from '../assets/codie.png';
-import mars from '../assets/MaRS.png';
+import mars from '../assets/mars.png';
 import kidSafe from '../assets/kidSafe.png';
 
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -66,7 +66,7 @@ export default function Awards() {
     };
 
     return (
-        <div id="awards" className="mt-20">
+        <div id="awards" className="width-1800 equal-width" style={{ margin: '100px auto' }}>
             {/* Heading section */}
             <div className="section">
                 <Fade damping={0.4} triggerOnce={true}>
@@ -87,7 +87,7 @@ export default function Awards() {
                     spaceBetween={20}
                     loop={true}
                     breakpoints={breakpoints}
-                    navigation={true}
+                    navigation={false}
                     modules={[Navigation, Autoplay]}
                     className="awards"
                     style={{ maxWidth: '80%' }}

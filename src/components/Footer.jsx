@@ -18,7 +18,7 @@ const Footer = () => {
       <div id="footer">
         {/* know section */}
         <div className="wrapper mt-10" style={{ background: '#fff6f4' }}>
-          <Row className="flex justify-content-center" style={{ padding: '40px', borderRadius: '20px' }}>
+          <Row className="flex justify-content-center width-1800 equal-width" style={{ padding: '40px', borderRadius: '20px', margin: 'auto' }}>
             <Col md={12} lg={4} style={{ width: '40%' }}>
               <Fade direction="up" cascade damping={0.3} triggerOnce={true}>
                 <div className="footer_logo mb-4">

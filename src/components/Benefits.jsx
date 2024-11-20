@@ -10,11 +10,11 @@ const Benefits = () => {
 
   return (
     <section
-      className='px-4'
+      className=''
       id="benefits"
       style={{ background: '#F8F5F4', paddingTop: '70px', paddingBottom: '75px' }}
     >
-      <div className="relative flex items-center justify-center" style={{ maxWidth: '1600px', margin: 'auto' }}>
+      <div className="relative flex items-center justify-center width-1800 equal-width" style={{ margin: 'auto' }}>
         {/* Special Shape Image */}
         <Fade direction="left" cascade damping={1} triggerOnce={true}>
           <div
@@ -30,10 +30,10 @@ const Benefits = () => {
         </Fade>
 
         {/* Content Container */}
-        <div className="benefits-content mx-auto mr-0  px-0 md:px-6 text-center lg:text-left lg:max-w-3xl relative z-10 lg:ml-auto lg:mr-20 lg:-top-2">
+        <div className="benefits-content mr-0 px-0 md:px-6 text-center lg:text-left lg:max-w-5xl relative z-10 lg:ml-auto lg:mr-20 lg:-top-2">
           <Fade direction="right" cascade damping={0.2} triggerOnce={true}>
             <h2 style={{ color: 'hsl(240deg 2.76% 22.88%)' }} className="mb-10 text-left font38-bold">
-              Who Benefits from <span className="text-[#FB8500]">ReadON?</span>
+              <span className="text-[#FB8500]">ReadON</span> Helps
             </h2>
 
             {/* Benefits List */}
@@ -43,7 +43,7 @@ const Benefits = () => {
                 <FaCheckCircle style={{ color: 'hsl(240deg 2.76% 22.88%)' }} className="text-3xl mt-1" /> {/* Set icon size to 3xl */}
                 <div>
                   <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Children facing reading difficulties:
-                    <span className='text-black font-normal'> Unlock reading fluency and focus with targeted interventions.</span></p>
+                    <span className='text-black font-normal'> Help your child unlock fluency and focus with targeted support.</span></p>
                 </div>
               </li>
 
@@ -51,8 +51,8 @@ const Benefits = () => {
               <li className="flex items-start space-x-4">
                 <FaCheckCircle style={{ color: 'hsl(240deg 2.76% 22.88%)' }} className="text-5xl mt-1" /> {/* Set icon size to 3xl */}
                 <div>
-                  <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Learners with ADHD, dyslexia, or other cognitive challenges:
-                    <span className='text-black font-normal'> We provide specialized strategies that cater to diverse learning needs, helping children succeed.</span></p>
+                  <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Learners with LD, ADHD, dyslexia, or other cognitive challenges:
+                    <span className='text-black font-normal'> We offer specialized interventions that help children of all abilities reach their potential.</span></p>
                 </div>
               </li>
 
@@ -60,7 +60,7 @@ const Benefits = () => {
               <li className="flex items-start space-x-4">
                 <FaCheckCircle style={{ color: 'hsl(240deg 2.76% 22.88%)' }} className="text-4xl mt-1" /> {/* Set icon size to 3xl */}
                 <div>
-                  <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Adults looking to improve literacy skills:
+                  <p className="font-semibold text-lg font20-light text-[#FB8500]" style={{ textAlign: 'left' }}>Teenagers looking to improve literacy skills:
                     <span className='text-black font-normal'> Achieve personal or professional goals through better reading and comprehension.</span></p>
                 </div>
               </li>

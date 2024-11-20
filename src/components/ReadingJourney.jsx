@@ -8,11 +8,11 @@ const ReadingJourney = () => {
     return (
         <section
             id="journey"
-            className="relative flex items-center justify-center"
+            className="pt-10"
             style={{ background: '#f0870b', minHeight: '320px' }}
         >
             <Fade direction="up" cascade damping={0.2} triggerOnce={true}>
-                <div className="content flex" style={{ flexDirection: 'column', alignItems: 'center', color: 'white' }}>
+                <div className="content flex width-1800 equal-width" style={{ flexDirection: 'column', alignItems: 'center', color: 'white', margin: 'auto' }}>
                     <h1 className='font38-bold text-center mb-3'>Start Your Childs Reading Journey Today!</h1>
                     <p className='font20-light text-center'>Help your child unlock their full potential with ReadON. Experience how our innovative cognitive therapy can transform their reading skills and confidence.</p>
                     <button

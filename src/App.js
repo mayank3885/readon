@@ -14,7 +14,7 @@ import Discover from './components/Discover';
 import Character from './components/Characters';
 import { Route, Routes } from 'react-router-dom';
 import RegisterationForm from './components/RegisterationForm';
-// import WaveContainer from './components/WaveContainer';
+import WaveContainer from './components/WaveContainer';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
             <>
               <Navbar />
               <Home />
-              {/* <WaveContainer /> */}
+              <WaveContainer />
               <About />
               <Discover />
               <WhyChoose />

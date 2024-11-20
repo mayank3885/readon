@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import logo3 from "../assets/logo3.png";
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import flag from '../assets/india-flag.svg'
 import { Fade } from 'react-awesome-reveal';
 
 const Navbar = () => {
@@ -13,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-black fixed w-full z-50 shadow-md left-0 bg-white">
+    <div className="text-black fixed w-full z-50 left-0 bg-white">
       {/* Logo Section */}
-      <nav style={{ maxWidth: '1700px', width: '100%', margin: 'auto', flexDirection: 'row' }} className='flex justify-between items-center bg-white px-6 md:px-12 py-4'>
+      <nav style={{ width: '100%', margin: 'auto', flexDirection: 'row' }} className='width-1800 flex justify-between items-center bg-white px-6 md:px-12 py-4'>
         <Fade direction='left' damping={0.4} triggerOnce={true}>
           <div className="flex items-center space-x-4 ">
             <div className="h-12 w-28">
@@ -42,16 +41,12 @@ const Navbar = () => {
         {/* Language Selector (Indian Flag) and Sign In Button */}
         <Fade direction='right' damping={0.4} triggerOnce={true}>
           <div className="hidden lg:flex items-center space-x-3">
-            <button
+            {/* <button
               onClick={() => handleLanguageSelect('https://india.example.com')}
               className="flex items-center space-x-1 cursor-pointer text-black hover:text-gray-600 mr-5"
             >
               <img src={flag} alt="India Flag" className="h-5 w-5" />
               <span>IN</span>
-            </button>
-
-            {/* <button className="bg-[#FB8500] font18-light text-white px-3 py-1 rounded hover:bg-[#dc933f] transition focus:outline-none" style={{ width: '95px' }}>
-            Sign In
             </button> */}
           </div>
         </Fade>
@@ -65,7 +60,7 @@ const Navbar = () => {
 
         {/* Mobile Navbar Menu */}
         {isMobileMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-40 lg:hidden flex flex-col items-center space-y-4 py-4">
+          <div className="absolute top-16 left-0 w-full bg-white z-40 lg:hidden flex flex-col items-center space-y-4 py-4">
             <Link to="home" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Home</Link>
             <Link to="about" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">About</Link>
             <Link to="whychooseus" smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="cursor-pointer hover:text-gray-600">Why Choose Us?</Link>
@@ -77,13 +72,13 @@ const Navbar = () => {
 
             {/* Mobile Language Selector (Indian Flag) */}
             <div className="flex justify-center">
-              <button
+              {/* <button
                 onClick={() => handleLanguageSelect('https://india.example.com')}
                 className="flex items-center space-x-1 cursor-pointer text-black hover:text-gray-600 pr-5"
               >
                 <img src={flag} alt="India Flag" className="h-5 w-5" />
                 <span>IN</span>
-              </button>
+              </button> */}
             </div>
 
             {/* <button className="bg-[#FB8500] text-white rounded hover:bg-[#dc933f] transition focus:outline-none px-2 py-1">

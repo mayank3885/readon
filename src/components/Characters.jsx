@@ -7,7 +7,7 @@ import { Fade } from 'react-awesome-reveal';
 const Character = () => {
     return (
         // <section className="bg-white flex justify-center items-center">
-        <div className="w-full mx-auto mt-8">
+        <div className="w-full mx-auto mt-20">
             <Fade direction="up" cascade damping={0.2} triggerOnce={true}>
                 <picture>
                     {/* Image for laptop screens */}

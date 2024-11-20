@@ -6,11 +6,15 @@ import whychoose3 from "../assets/why-choose-ReadON-3.gif";
 import whychoose4 from "../assets/why-choose-readON-4.png";
 import { FaHandHoldingDollar } from 'react-icons/fa6';
 import { Fade } from 'react-awesome-reveal';
+import { Col, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const WhyChoose = () => {
   const [selected, setSelected] = useState('ReadON understands the needs');
   const [showVideo, setShowVideo] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Initial check for mobile
+
+  const navigate = useNavigate()
 
   // Update `isMobile` on window resize
   useEffect(() => {
@@ -19,92 +23,110 @@ const WhyChoose = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Content for each option in "Why Choose ReadON?" section
-  const content = {
-    'ReadON understands the needs': {
-      text: 'The standardized neurocognitive assessment in a convenient game-based format can be completed in 35-40 minutes on a computer or mobile device, eliminating the need for traditional pen-and-paper methods. The assessment explains why someone is good in mathematics or literacy.',
-      image: whychoose1
-    },
-    'Personalized Intervention': {
-      text: "The platform uses advanced technologies to tailor game-based therapy sessions to fit the learner's unique needs, providing targeted interventions that lead to improvement.",
-      image: whychoose3
-    },
-    'Proven Results': {
-      text: 'Experience noticeable improvements in just 3-4 months, with measurable progress in reading skills that you can track at home.',
-      image: whychoose2
-    },
-    'Affordable Cognitive Support:': {
-      text: 'ReadON provides affordable, high-quality cognitive therapy, making it accessible to more families, especially those with neurodiverse children. Its budget-friendly digital approach ensures effective support without financial strain, bridging the gap between need and access.',
-      image: whychoose4
-    }
-  };
-
-  // Icon mapping for each content option
-  const icons = {
-    'ReadON understands the needs': <FaPuzzlePiece className="text-3xl mr-2" />,
-    'Personalized Intervention': <FaUsers className="text-3xl mr-2" />,
-    'Proven Results': <FaChartLine className="text-3xl mr-2" />,
-    'Affordable Cognitive Support:': <FaHandHoldingDollar className="text-3xl mr-2" />
-  };
-
   return (
-    <section id='whychooseus' style={{ background: 'rgb(245, 130, 32)' }}>
+    <section id='whychooseus' style={{ background: 'rgb(248, 245, 244)' }}>
       {/* Why Choose ReadON Section */}
-      <div className="text-white py-8 md:py-24 md:mt-12 relative w-full left-0">
-        <div className="max-w-6xl mx-auto text-center" style={{ marginTop: '-10px' }}>
+      <div className="text-black py-8 md:py-24 md:mt-12 relative w-full left-0">
+        <div className="equal-width width-1800 mx-auto text-center" style={{ marginTop: '-10px' }}>
           <Fade direction="up" cascade damping={0.4} triggerOnce={true}>
-            <h2 className="font38-bold text-4xl font-semibold mb-10">Why Choose ReadON?</h2>
+            <h2 className="font38-bold text-4xl font-semibold mb-10">Discover What Sets ReadON Apart</h2>
 
-            {isMobile ? (
-              // Dropdown for mobile
-              <select
-                className="w-full p-3 rounded-2xl font24-bold bg-white text-orange-500 custom-select mb-8"
-                value={selected}
-                onChange={(e) => setSelected(e.target.value)}
-              >
-                {Object.keys(content).map((item) => (
-                  <option key={item} value={item}>
-                    {item}
-                  </option>
-                ))}
-              </select>
-            ) : (
-              // Button grid for larger screens
-              <div className="grid grid-cols-2 gap-8 lg:grid-cols-2 xl:grid-cols-4 mb-8 button-container" style={{ justifyItems: 'center' }}>
-                {Object.keys(content).map((item, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setSelected(item)}
-                    className={`filter-buttons rounded-2xl font20-bold font-bold border-2 ${selected === item ? 'bg-white text-orange-500' : 'bg-[rgb(245, 130, 32)] hover:bg-orange-400'
-                      }`}
-                  >
-                    <div className="filter">
-                      {icons[item]} {/* Render the appropriate icon */}
-                      <div className="flex flex-col justify-center">
-                        <span className='justify-self-center'>{item}</span> {/* First part of text */}
+            <div className="wrapper">
+              <div className="readonkey-info">
+                <Fade cascade damping={0.4} triggerOnce={true}>
+                  <Row className="readonkey-box flex text-left md:flex-row flex-col justify-between items-center" style={{ gap: '15px' }}>
+                    <Col md={12} lg={6} className="align-content-center">
+                      <div className="hero-info">
+                        <h3 className="font24-bold textHeading padding10 text-ternary-color">
+                          1. Convenient, Game-Based Assessment:
+                        </h3>
+                        <p className="readonPara font20-light">
+                          Complete in 35-40 minutes from home on any device. No more lengthy, traditional tests.
+                        </p>
                       </div>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            )}
+                    </Col>
+                    <Col md={12} lg={6}>
+                      <div className="shape">
+                        <div className="readonkey-image ml-auto">
+                          <img src={whychoose1} alt="gain" />
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
 
-            {/* Selected Content with Image */}
-            <div className="flex flex-col md:flex-row items-center text-[#f4f3f1] p-0 md:p-6 pl-0 text-left relative rounded-md gap-2 md:gap-8">
-              {/* Background Image Container */}
-              <div
-                className="w-full md:w-1/2 flex-shrink-0 rounded-lg min-h-[350px] relative flex items-center justify-center bg-cover bg-center "
-                style={{
-                  backgroundImage: `url(${content[selected].image})`,
 
-                  maxWidth: '450px'
-                }}
-              ></div>
+                  <Row className="flex-row-reverse padding20 readonkey-box md:flex-row flex-col flex text-left justify-between items-center" style={{ gap: '15px' }}>
+                    <Col md={12} lg={6} className="align-content-center">
+                      <div className="hero-info">
+                        <h3 className="font24-bold textHeading text-ternary-color">
+                          2. Personalized Intervention
+                        </h3>
+                        <p className='readonPara font20-light'>
+                          The platform uses advanced technologies to tailor game-based therapy sessions to fit the learner's unique needs, providing targeted interventions that lead to improvement.
+                        </p>
+                      </div>
+                    </Col>
+                    <Col md={12} lg={6} >
+                      <div className="shape action">
+                        <div className="readonkey-image mr-auto">
+                          <img src={whychoose2} alt="action" />
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
 
-              {/* Text Content */}
-              <div className="flex-grow">
-                <h3 className="font-semibold mb-4 mt-4 font38-light" style={{ lineHeight: '40px' }}>{selected}</h3>
-                <p className="font20-light">{content[selected].text}</p>
+                  {/* partnership section */}
+                  <Row className="readonkey-box flex text-left md:flex-row flex-col justify-between items-center" style={{ gap: '15px' }}>
+                    <Col md={12} lg={6} className="align-content-center">
+                      <div className="hero-info">
+                        <h3 className="font24-bold textHeading  text-ternary-color">
+                          3. Proven Results
+                        </h3>
+                        <p className='readonPara font20-light'>
+                          Experience noticeable improvements in just 3-4 months, with measurable progress in reading skills that you can track at home.
+                        </p>
+                      </div>
+                    </Col>
+                    <Col md={12} lg={6} >
+                      <div className="shape action">
+                        <div className="readonkey-image ml-auto">
+                          <img src={whychoose3} alt="laptop" />
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+
+                  <Row className="flex-row-reverse padding20 md:flex-row flex-col readonkey-box flex text-left justify-between items-center" style={{ gap: '15px' }}>
+                    <Col md={12} lg={6} className="align-content-center">
+                      <div className="hero-info">
+                        <h3 className="font24-bold textHeading text-ternary-color">
+                          4.	Affordable Cognitive Support
+                        </h3>
+                        <p className='readonPara font20-light'>
+                          ReadON provides affordable, high-quality cognitive therapy, making it accessible to more families, especially those with neurodiverse children. Its budget-friendly digital approach ensures effective support without financial strain, bridging the gap between need and access.
+                        </p>
+                      </div>
+                    </Col>
+                    <Col md={12} lg={6} >
+                      <div className="shape action">
+                        <div className="readonkey-image mr-auto">
+                          <img src={whychoose4} alt="action" />
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col md={12} lg={12} >
+                      <button
+                        className="bg-[#F58220] hover:bg-[#E07B00] font24-light text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
+                        onClick={() => navigate('/form')}
+                      >
+                        Buy assessment now!
+                      </button>
+                    </Col>
+                  </Row>
+                </Fade>
               </div>
             </div>
           </Fade>
