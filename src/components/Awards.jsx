@@ -6,7 +6,7 @@ import tieQuest from '../assets/tie-quest.png';
 import ges from '../assets/ges.png';
 import mindshare from '../assets/mindshare.png';
 import codie from '../assets/codie.png';
-import mars from '../assets/mars.png';
+import mars from '../assets/MaRS.png';
 import kidSafe from '../assets/kidSafe.png';
 
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -90,7 +90,7 @@ export default function Awards() {
                     navigation={false}
                     modules={[Navigation, Autoplay]}
                     className="awards"
-                    style={{ maxWidth: '80%' }}
+                    style={{ maxWidth: '90%' }}
                 >
                     {data.map((item) => (
                         <SwiperSlide key={item.id}>

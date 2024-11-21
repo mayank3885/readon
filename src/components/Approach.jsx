@@ -75,7 +75,7 @@ const Approach = () => {
                       style={{ fontSize: '14pt' }}
                     >
                       <hr className="border-black mb-4" /> {/* Added bottom margin */}
-                      <p style={{ textAlign: 'left' }} className='font20-bold'>{item.description}</p>
+                      <p style={{ textAlign: 'left' }} className='font18-bold'>{item.description}</p>
                     </div>
                   )}
                 </div>

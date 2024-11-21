@@ -15,6 +15,7 @@ import Character from './components/Characters';
 import { Route, Routes } from 'react-router-dom';
 import RegisterationForm from './components/RegisterationForm';
 import WaveContainer from './components/WaveContainer';
+import Reports from './components/Reports';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <WhyChoose />
               <Benefits />
               <Approach />
+              <Reports />
               <ReadOnAtHome />
               <Testimonials />
               <Character />

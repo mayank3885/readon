@@ -7,9 +7,9 @@ import { Fade } from 'react-awesome-reveal';
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleLanguageSelect = (url) => {
-    window.open(url, '_blank');  // Redirect to the selected domain
-  };
+  // const handleLanguageSelect = (url) => {
+  //   window.open(url, '_blank');  // Redirect to the selected domain
+  // };
 
   return (
     <div className="text-black fixed w-full z-50 left-0 bg-white">

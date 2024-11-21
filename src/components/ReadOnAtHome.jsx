@@ -31,7 +31,7 @@ const ReadOnAtHome = () => {
                                     <div className="box-para">
                                         <p className="font24-light">1.</p>
                                         <h4 className="font24-bold">ReadON Cognitive Assessment</h4>
-                                        <p className="font20-light mt-3">
+                                        <p className="font18-light mt-3">
                                             This digital neuropsychological evaluation assesses cognitive abilities and overall wellness, measuring attention span, memory, reasoning, planning, and coordination while comparing results to peers of the same age and gender.
                                         </p>
                                     </div>
@@ -46,7 +46,7 @@ const ReadOnAtHome = () => {
                                     <div className="box-para">
                                         <p className="font24-light">2.</p>
                                         <h4 className="font24-bold">ReadON Cognitive Therapy Sessions</h4>
-                                        <p className="font20-light mt-3">
+                                        <p className="font18-light mt-3">
                                             Our sessions utilize interactive exercises designed to enhance attention, working memory, and executive functions that improve reading/writing fluency and comprehension, tailored to the learner's unique needs.
                                         </p>
                                     </div>
@@ -60,7 +60,7 @@ const ReadOnAtHome = () => {
                                     <div className="box-para">
                                         <p className="font24-light">3.</p>
                                         <h4 className="font24-bold">Progress Monitoring and Guidance</h4>
-                                        <p className="font20-light mt-3">
+                                        <p className="font18-light mt-3">
                                             Continuous tracking of progress ensures learners stay on course to meet their objectives, with regular feedback to adjust strategies as necessary.
                                         </p>
                                     </div>

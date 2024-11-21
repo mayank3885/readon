@@ -272,7 +272,7 @@ const RegisterationForm = () => {
                         </div>
                         <button
                             type="submit"
-                            className="bg-[#F58220] my-4 font20-light hover:bg-[#E07B00] text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
+                            className="bg-[#F58220] my-4 font24-light hover:bg-[#E07B00] text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
                         >
                             Proceed
                         </button>

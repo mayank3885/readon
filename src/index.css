@@ -61,16 +61,6 @@ code {
   font-weight: 700;
 }
 
-.font20-light {
-  font-size: calc(20px * var(--scale-factor));
-  font-weight: 400;
-}
-
-.font20-bold {
-  font-size: calc(20px * var(--scale-factor));
-  font-weight: 700;
-}
-
 .font24-light {
   font-size: calc(22px * var(--scale-factor));
   font-weight: 400;
@@ -82,23 +72,16 @@ code {
 }
 
 .font38-light {
-  font-size: calc(38px * var(--scale-factor));
-  /* Adjusted to match original value */
+  font-size: calc(36px * var(--scale-factor));
   font-weight: 400;
 }
 
 .font38-bold {
-  font-size: calc(38px * var(--scale-factor));
-  /* Adjusted to match original value */
+  font-size: calc(36px * var(--scale-factor));
   font-weight: 700;
 }
 
-.font56-light {
-  font-size: calc(62px * var(--scale-factor)) !important;
-  font-weight: 400;
-}
-
-.font56-bold {
+.font62-bold {
   font-size: calc(62px * var(--scale-factor)) !important;
   font-weight: 700;
 }
@@ -142,13 +125,9 @@ section {
     max-width: 100% !important;
   }
 
-  .swiper {
-    padding: 20px !important;
+  .wave-container {
+    margin-top: 300px !important;
   }
-
-  /* .wave-container {
-    margin-top: 200px !important;
-  } */
 }
 
 #howdoes {
@@ -158,7 +137,6 @@ section {
 #howdoes .howdoes-info {
   width: 90%;
   margin: 70px auto;
-  padding: 30px;
   border-radius: 20px;
 }
 
@@ -365,7 +343,6 @@ section {
 
 
 #howdoes .row-content {
-  padding: 40px;
   margin-top: 50px;
   border-radius: 20px;
   justify-content: center;
@@ -403,11 +380,6 @@ section {
     vertical-align: bottom
   }
 
-
-  .special-shape-img {
-    display: none;
-  }
-
   .children-image {
     display: none;
   }
@@ -431,13 +403,13 @@ section {
   #home .content-container {
     display: flex !important;
     width: 100% !important;
-    align-items: center !important;
     margin-left: auto !important;
     max-width: 100% !important;
+    align-items: center !important;
   }
 
-  #home img {
-    min-width: 400px !important;
+  .wave-container {
+    margin-top: 600px !important;
   }
 }
 
@@ -497,11 +469,7 @@ section {
   }
 
   .special-shape-img {
-    min-width: 300px !important;
-  }
-
-  #home {
-    display: flex;
+    display: none !important;
   }
 
   .payment-img {
@@ -548,12 +516,17 @@ section {
   #home {
     margin-bottom: -10px !important;
     padding-top: 0px !important;
+    align-items: flex-start !important;
   }
 
   #home img {
     object-fit: cover !important;
     min-width: 600px !important;
     margin-bottom: -100px;
+  }
+
+  .wave-container {
+    margin-top: 200px;
   }
 }
 
@@ -693,4 +666,45 @@ section {
     font-size: 12px;
     list-style: 1.1rem !important;
   }
+}
+
+
+.ta_HFR_pdf {
+  margin-top: 60px;
+  background: #e5e7f0;
+  display: table;
+  width: 100%;
+}
+
+#reports .left {
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#reports .right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 53%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 0) and (max-width: 720px) {
+  #reports .left {
+    width: 90%;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  #reports .right img {
+    margin-top: -10% !important;
+  }
+}
+
+
+.wave-container img {
+  margin-top: -600px;
 }

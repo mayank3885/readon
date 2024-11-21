@@ -1,5 +1,4 @@
 import React from 'react';
-import hero from "../assets/hero.png";
 import { useNavigate } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 
@@ -13,17 +12,17 @@ const Home = () => {
       style={{
         paddingTop: '80px',
         overflow: 'hidden',
+        zIndex: 1
       }}
     >
-      {/* Left Column: Text Content */}
       <Fade direction="up" cascade damping={1} triggerOnce={true}>
         <div
-          className="flex flex-col md:flex-row items-center relative md:min-h-[600px] width-1800"
-          style={{ justifyContent: 'space-between', margin: 'auto' }}
+          className="flex flex-col md:flex-row items-center relative md:min-h-[600px] width-1800 w-100"
+          style={{ margin: 'auto' }}
         >
           <div className="text-center md:text-left w-full md:w-1/2 max-w-2xl px-4 md:px-0 mt-8 md:mt-0 flex" style={{ justifyContent: 'center' }}>
             <div className='content-container'>
-              <h1 className="font56-bold md:text-[3.5rem] font-extrabold mb-4 leading-tight" style={{ color: 'hsl(240deg 2.76% 22.88%)' }}>
+              <h1 className="font62-bold md:text-[3.5rem] font-extrabold mb-4 leading-tight" style={{ color: 'hsl(240deg 2.76% 22.88%)' }}>
                 <span className="flip-text block md:inline-block">
                   <span>Read Better</span>
                   <span>Learn Faster</span>
@@ -31,7 +30,7 @@ const Home = () => {
                 </span> <span className='with-readon'>with</span>
                 <span className="text-[#FB8500] pl-3 with-readon">ReadON</span>
               </h1>
-              <p className="mb-4 md:mb-8 w-full md:w-3/4 mx-auto md:mx-0 font20-light">
+              <p className="mb-4 md:mb-8 w-full md:w-3/4 mx-auto md:mx-0 font24-light">
                 Digital Cognitive Assessment & Therapy Tailored for Your Child’s Success
               </p>
               <button
