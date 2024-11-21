@@ -15,13 +15,13 @@ const ReadOnAtHome = () => {
     const navigate = useNavigate()
 
     return (
-        <div id="howdoes" className="boxImg">
+        <div id="howdoes" className="boxImg pt-16">
             {/* row section */}
             <div className="howdoes-info width-1800 equal-width">
                 <h2 className="font38-bold font-semibold text-[#000000] text-center">With ReadON, Success is as Easy as 1-2-3!</h2>
                 <Fade direction='up' damping={0.4} triggerOnce={true}>
                     <Row>
-                        <div className='row-content'>
+                        <div className='row-content p-4'>
                             <Col xs={12} sm={6} md={6} lg={6} className="mb-4 custom-column">
                                 <div className="box-item">
                                     <div className="box-img">

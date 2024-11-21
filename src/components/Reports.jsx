@@ -11,9 +11,9 @@ const Reports = () => {
 
     return (
         <Fade direction='up' damping={0.4} triggerOnce={true}>
-            <div id="reports" className="boxImg my-20 md:pt-0 pt-10" style={{ background: '#fff6f4' }}>
+            <div id="reports" className="boxImg py-10 mt-10" style={{ background: '#fff6f4' }}>
                 {/* row section */}
-                <div class="report-container width-1800 equal-width my-20" style={{ margin: 'auto' }}>
+                <div class="report-container width-1800 flex flex-row md:flex-col equal-width my-20" style={{ margin: 'auto' }}>
                     <div class="left py-10 font38-bold"><p className='mb-4'>Noticeable Improvements in Just 3-4 Months!</p>
                         <p className='font24-light mb-3'>With ReadON, results aren’t just promised — they’re delivered. Most children show significant improvements in reading fluency, comprehension, and focus within 3-4 months. We provide regular progress reports, so you can see and measure how your child is thriving.</p>
 
@@ -28,7 +28,7 @@ const Reports = () => {
                         </button>
                     </div>
                     <div class="right">
-                        <div loading="lazy" class="sres_ffDrawPDF">
+                        <div className='img-container absolute' style={{ bottom: 0, right: 0, width: '60%' }}>
                             <img src={report} alt="reports" />
                         </div>
                     </div>

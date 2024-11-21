@@ -16,6 +16,9 @@ import { Route, Routes } from 'react-router-dom';
 import RegisterationForm from './components/RegisterationForm';
 import WaveContainer from './components/WaveContainer';
 import Reports from './components/Reports';
+import TermsOfUse from './components/TermsOfUse';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import RefundPolicy from './components/RefundPolicy';
 
 function App() {
   return (
@@ -44,6 +47,9 @@ function App() {
           }
         />
         <Route path="/form" element={<RegisterationForm />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
       </Routes>
     </div>
   );

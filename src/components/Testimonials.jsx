@@ -47,7 +47,7 @@ export default function Testimonials() {
     };
 
     return (
-        <div id="testimonial" className='width-1800 equal-width' style={{ margin: 'auto' }}>
+        <div id="testimonial" className='width-1800 equal-width pt-20' style={{ margin: 'auto' }}>
             {/* heading section */}
             <div className="section mb30">
                 <Fade direction='up' damping={0.4} triggerOnce={true}>

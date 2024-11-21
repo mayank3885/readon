@@ -1,6 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { CaretRightFill, Envelope, EnvelopeFill, TelephoneForwardFill } from 'react-bootstrap-icons';
+import { CaretRightFill, EnvelopeFill, TelephoneForwardFill } from 'react-bootstrap-icons';
 import { Fade } from 'react-awesome-reveal';
 import { Link, NavLink } from 'react-router-dom';
 import Facebook from '../assets/facebook.png';
@@ -19,7 +19,7 @@ const Footer = () => {
         {/* know section */}
         <div className="wrapper mt-10" style={{ background: '#fff6f4' }}>
           <Row className="flex justify-content-center width-1800 equal-width" style={{ paddingTop: '40px', borderRadius: '20px', margin: 'auto' }}>
-            <Col md={12} lg={4} style={{ width: '40%' }}>
+            <Col md={12} lg={4} style={{ width: '43%' }}>
               <Fade direction="up" cascade damping={0.3} triggerOnce={true}>
                 <div className="footer_logo mb-4">
                   <Link to="/">
@@ -29,98 +29,75 @@ const Footer = () => {
                 <p className="font18-light address md:pr-24" style={{ lineHeight: '30px' }}>
                   ReadON Arabia is the regional office of ReadON.ai and is owned by Orange Neurosciences Canada. Orange Neurosciences is a next gen ML/AI Technology Company working on the Future of (Spec) EdTech & Medicine.
                 </p>
-                <ul className="mt-5 address-list">
-                  <li className="mb-3">
-                    <Row className="address-item">
-                      <Col lg={1} md={1} xs={1}>
-                        <EnvelopeFill className="address-icon" border="gray" size={17} />
-                      </Col>
-                      <Col lg={11} md={11} xs={11}>
-                        <p className="font18-light text-primary-color">
-                          <b>Email:</b>{' '}
-                          <a href="mailto:info@readingmatters.in" className="text-black">
-                            info@readingmatters.in
-                          </a>
-                        </p>
-                      </Col>
-                    </Row>
-                  </li>
-                  <li>
-                    <Row className="address-item">
-                      <Col lg={1} md={1} xs={1}>
-                        <TelephoneForwardFill className="address-icon" size={17} />
-                      </Col>
-                      <Col lg={11} md={11} xs={11}>
-                        <p className="font18-light text-primary-color">
-                          <b>Phone:</b>{' '}
-                          <a href="tel:+91-78386 68993" className="text-black">
-                            +91-78386 68993
-                          </a>
-                        </p>
-                      </Col>
-                    </Row>
-                  </li>
-                </ul>
               </Fade>
             </Col>
-            <Col md={12} lg={4} style={{ width: '30%' }}>
+
+            <Col md={12} lg={4} style={{ width: '35%' }}>
               <div className="footer-info">
                 <Fade direction="up" cascade damping={0.3} triggerOnce={true}>
                   <h6 className="font24-bold mt-8 md:mt-0">Our Offices</h6>
-                  <h6 className="font18-bold">India</h6>
-                  <NavLink to="/readonathome" onClick={handleClickTop}>
-                    <p className="mt-2 text-black flex font18-light">Kendriya Vihar, Sector 56, Gurugram,</p>
-                    <p className="font18-light">Haryana 122011</p>
-                  </NavLink>
-                  <NavLink to="/privacypolicy" target="_blank">
-                    <p className="mt-1 text-black flex font18-light"> +91-78386 68993</p>
-                  </NavLink>
+
                   <h6 className="mt-5 font18-bold">Bahrain</h6>
                   <NavLink to="/readonathome" onClick={handleClickTop}>
                     <p className="mt-2 text-black flex font18-light">PO. Box 13707, Near Asgher Ali Perfumes</p>
                     <p className="font18-light">Muharraq, Bahrain</p>
                   </NavLink>
-                  <NavLink to="/privacypolicy" target="_blank">
-                    <p className="mt-1 text-black flex font18-light"> +973-17368568</p>
-                  </NavLink>
+                  <ul className="mt-5 address-list">
+                    <li className="mb-3">
+                      <Row className="address-item">
+                        <Col lg={1} md={1} xs={1}>
+                          <EnvelopeFill className="address-icon" border="gray" size={17} />
+                        </Col>
+                        <Col lg={11} md={11} xs={11}>
+                          <p className="font18-light text-primary-color">
+                            <b>Email:</b>{' '}
+                            <a href="mailto:info@readingmatters.in" className="text-black">
+                              info@readingmatters.in
+                            </a>
+                          </p>
+                        </Col>
+                      </Row>
+                    </li>
+                    <li>
+                      <Row className="address-item">
+                        <Col lg={1} md={1} xs={1}>
+                          <TelephoneForwardFill className="address-icon" size={17} />
+                        </Col>
+                        <Col lg={11} md={11} xs={11}>
+                          <p className="font18-light text-primary-color">
+                            <b>Phone:</b>{' '}
+                            <a href="tel:+91-78386 68993" className="text-black">
+                              +91-78386 68993
+                            </a>
+                          </p>
+                        </Col>
+                      </Row>
+                    </li>
+                  </ul>
                 </Fade>
               </div>
             </Col>
-            <Col md={12} lg={4} style={{ width: '30%' }} className="align-content-center">
+
+            <Col md={12} lg={4} style={{ width: '25%' }} className="align-content-center">
               <div className="footer-info">
                 <Fade direction="up" cascade damping={0.3} triggerOnce={true}>
                   <h6 className="font24-bold mt-8 md:mt-0">Quick Links</h6>
-                  <NavLink to="/readonathome" onClick={handleClickTop}>
-                    <p className="mt-3 font18-light text-black flex">
-                      <CaretRightFill color="black" size={18} className="mt-1" /> ReadON At Home
-                    </p>
-                  </NavLink>
-                  <NavLink to="/privacypolicy" target="_blank">
+                  <NavLink to="/privacy-policy" target="_blank">
                     <p className="mt-3 font18-light text-black flex">
                       <CaretRightFill color="black" size={18} className="mt-1" /> Privacy Policy
                     </p>
                   </NavLink>
-                  <NavLink to="/refundpolicy" target="_blank">
+                  <NavLink to="/refund-policy" target="_blank">
                     <p className="mt-3 font18-light text-black flex">
                       <CaretRightFill color="black" size={18} className="mt-1" /> Refund Policy
                     </p>
                   </NavLink>
-                  <NavLink to="/termsofuse" target="_blank">
+                  <NavLink to="/terms-of-use" target="_blank">
                     <p className="mt-3 font18-light text-black flex">
                       <CaretRightFill color="black" size={18} className="mt-1" /> Terms Of Use
                     </p>
                   </NavLink>
-                  <div className="subscribe mt-5">
-                    <p className="weight800 font18-light" style={{ fontSize: '20px', fontWeight: '900' }}>
-                      Get Monthly Update
-                    </p>
-                    <div className="subscribe-list">
-                      <input type="text" placeholder="Enter Your Email" className="form-control" />
-                      <button type="submit" className="envbtn">
-                        <Envelope className="subscribe-icon" border="gray" size={32} />
-                      </button>
-                    </div>
-                  </div>
+
                   <div className="social_icon mt-5">
                     <ul>
                       <li>
@@ -148,7 +125,7 @@ const Footer = () => {
       </div>
       <div className="wrapper" style={{ background: '#fff6f4' }}>
         <Row>
-          <Col className="pb-4">
+          <Col className="py-4">
             <p className="text-center font15">© {new Date().getFullYear()} by ReadOn Arabia</p>
           </Col>
         </Row>

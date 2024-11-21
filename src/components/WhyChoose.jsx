@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import { FaPuzzlePiece, FaUsers, FaChartLine } from 'react-icons/fa'; // Import icons
 import whychoose1 from "../assets/why-choose-ReadON-1.png";
 import whychoose2 from "../assets/why-choose-ReadON-2.png";
-import whychoose3 from "../assets/why-choose-ReadON-3.gif";
+import whychoose3 from "../assets/why-choose-ReadON-3_update.gif";
 import whychoose4 from "../assets/why-choose-readON-4.png";
 // import { FaHandHoldingDollar } from 'react-icons/fa6';
 import satisfaction from '../assets/100-satisfaction.png'
@@ -11,31 +11,22 @@ import { Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const WhyChoose = () => {
-  // const [selected, setSelected] = useState('ReadON understands the needs');
   const [showVideo, setShowVideo] = useState(false);
-  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Initial check for mobile
 
   const navigate = useNavigate()
-
-  // Update `isMobile` on window resize
-  // useEffect(() => {
-  //   const handleResize = () => setIsMobile(window.innerWidth < 768);
-  //   window.addEventListener('resize', handleResize);
-  //   return () => window.removeEventListener('resize', handleResize);
-  // }, []);
 
   return (
     <section id='whychooseus' style={{ background: '#fff6f4' }}>
       {/* Why Choose ReadON Section */}
-      <div className="text-black py-8 md:py-24 md:mt-12 relative w-full left-0">
-        <div className="equal-width width-1800 mx-auto text-center" style={{ marginTop: '-10px' }}>
+      <div className="text-black py-16 md:mt-16 relative w-full left-0">
+        <div className="equal-width width-1800 mx-auto text-center pt-4">
           <Fade direction="up" cascade damping={0.1} triggerOnce={true}>
             <h2 className="font38-bold text-4xl font-semibold mb-10">Discover What Sets <span className="text-[#FB8500]">ReadON</span> Apart</h2>
 
             <div className="wrapper">
               <div className="readonkey-info">
                 <Fade cascade damping={0.1} triggerOnce={true}>
-                  <Row className="readonkey-box flex text-left md:flex-row flex-col justify-between items-center" style={{ gap: '15px' }}>
+                  <Row className="readonkey-box flex text-left md:flex-row flex-col justify-between items-center py-10" style={{ gap: '15px' }}>
                     <Col md={12} lg={6} className="align-content-center">
                       <div className="hero-info">
                         <h3 className="font24-bold textHeading padding10 text-ternary-color">
@@ -56,7 +47,7 @@ const WhyChoose = () => {
                   </Row>
 
 
-                  <Row className="flex-row-reverse padding20 readonkey-box md:flex-row-reverse flex-col flex text-left justify-between items-center" style={{ gap: '15px' }}>
+                  <Row className="flex-row-reverse padding20 readonkey-box md:flex-row-reverse flex-col py-10 flex text-left justify-between items-center" style={{ gap: '15px' }}>
                     <Col md={12} lg={6} className="align-content-center">
                       <div className="hero-info">
                         <h3 className="font24-bold textHeading text-ternary-color">
@@ -77,7 +68,7 @@ const WhyChoose = () => {
                   </Row>
 
                   {/* partnership section */}
-                  <Row className="readonkey-box flex text-left md:flex-row flex-col justify-between items-center" style={{ gap: '15px' }}>
+                  <Row className="readonkey-box flex text-left md:flex-row flex-col py-10 justify-between items-center" style={{ gap: '15px' }}>
                     <Col md={12} lg={6} className="align-content-center">
                       <div className="hero-info">
                         <h3 className="font24-bold textHeading  text-ternary-color">
@@ -97,7 +88,7 @@ const WhyChoose = () => {
                     </Col>
                   </Row>
 
-                  <Row className="flex-row-reverse padding20 md:flex-row-reverse flex-col readonkey-box flex text-left justify-between items-center" style={{ gap: '15px' }}>
+                  <Row className="flex-row-reverse padding20 md:flex-row-reverse py-10 flex-col readonkey-box flex text-left justify-between items-center" style={{ gap: '15px' }}>
                     <Col md={12} lg={6} className="align-content-center">
                       <div className="hero-info">
                         <h3 className="font24-bold textHeading text-ternary-color">

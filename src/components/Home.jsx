@@ -23,7 +23,7 @@ const Home = () => {
           className="flex flex-col md:flex-row items-center relative md:min-h-[600px] width-1800 w-100"
           style={{ margin: 'auto' }}
         >
-          <div className="text-center md:text-left w-full md:w-1/2 max-w-2xl px-4 md:px-0 mt-8 md:mt-0 flex" style={{ justifyContent: 'center' }}>
+          <div className="text-center md:text-left w-full max-w-2xl px-4 md:px-0 mt-8 md:mt-0 flex" style={{ justifyContent: 'center' }}>
             <div className='content-container'>
               <h1 className="font62-bold md:text-[3.5rem] font-extrabold mb-4 leading-tight" style={{ color: 'hsl(240deg 2.76% 22.88%)' }}>
                 <span className="flip-text block md:inline-block">
@@ -37,14 +37,14 @@ const Home = () => {
                 Digital Cognitive Assessment & Therapy Tailored for Your Child’s Success
               </p>
               <div className='flex flex-row w-full'>
-                <div className='flex items-start justify-center' style={{ width: '200px', height: '50px' }}>
-                  <img src={satisfaction} alt="100% Satisfaction Guaranteed" className='w-100' style={{ objectFit: 'contain' }} />
+                <div className='flex items-start justify-center'>
+                  <img src={satisfaction} alt="100% Satisfaction Guaranteed" className='w-100' style={{ objectFit: 'contain', height: '70px' }} />
                 </div>
-                <div className='flex items-start justify-center' style={{ width: '200px', height: '50px' }}>
-                  <img src={scienceBacked} alt="Backed by Science" className='w-100' style={{ objectFit: 'contain' }} />
+                <div className='flex items-start justify-center'>
+                  <img src={scienceBacked} alt="Backed by Science" className='w-100' style={{ objectFit: 'contain', height: '70px' }} />
                 </div>
-                <div className='flex items-start justify-center' style={{ width: '200px', height: '50px' }}>
-                  <img src={parentsTrust} alt="Trusted by Parents" className='w-100' style={{ objectFit: 'contain' }} />
+                <div className='flex items-start justify-center'>
+                  <img src={parentsTrust} alt="Trusted by Parents" className='w-100' style={{ objectFit: 'contain', height: '70px' }} />
                 </div>
               </div>
               <button
