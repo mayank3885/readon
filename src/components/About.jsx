@@ -2,7 +2,7 @@ import React from 'react';
 import bottomFullImage from "../assets/2nd-Section.png";
 import { Fade } from 'react-awesome-reveal';
 import { useNavigate } from 'react-router-dom';
-// import wave3 from "../assets/wave5.png";
+import CountUp from 'react-countup';
 
 const About = () => {
   const navigate = useNavigate()
@@ -16,7 +16,26 @@ const About = () => {
       <div
         className="container mx-auto pb-6 text-center width-1800 equal-width"
       >
-        <Fade direction="up" cascade damping={0.2} triggerOnce={true}>
+        <Fade direction="up" cascade damping={0.1} triggerOnce={true}>
+          <div className="statistics mb-10 md:mb-20">
+            <span className='elements font24-bold text-white'>
+              <CountUp start={0} end={100000} duration={2.5} separator="," className='font38-bold' /><span className="font38-bold">+</span>
+              <br />
+              Sessions Completed
+            </span>
+            <span className='elements font24-bold text-white'>
+              <CountUp start={0} end={75000} duration={3.0} separator="," className='font38-bold' /><span className="font38-bold">+</span>
+              <br />
+              Sessions Completed
+            </span>
+            <span className='elements font24-bold text-white'>
+              Trusted in<br />
+              <CountUp start={0} end={9} duration={3.5} className='font38-bold' />
+              &nbsp; Countries
+            </span>
+          </div>
+
+
           {/* Title */}
           < h2
             className="font-bold font38-bold mb-8 leading-tight max-w-5xl mx-auto"

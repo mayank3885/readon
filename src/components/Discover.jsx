@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import youtubethumbnail from "../assets/youtube-thumbnail.jpeg";
+import youtubethumbnail from "../assets/yt-thumbnail.png";
 import { useNavigate } from 'react-router-dom';
+import provenResults from '../assets/provenResults.png'
 
 const Discover = () => {
     const [showVideo, setShowVideo] = useState(false);
@@ -21,6 +22,10 @@ const Discover = () => {
                             <li className='font24-light list-disc'>Start therapy sessions based on unique needs.</li>
                             <li className='font24-light list-disc'>Monitor and celebrate progress together.</li>
                         </ul>
+
+                        <div className='flex items-start my-3'>
+                            <img src={provenResults} alt="Proven results" className='w-100' style={{ height: '70px', objectFit: 'contain' }} />
+                        </div>
                         {/* The Start button is here in desktop */}
                         <div className="flex items-center pt-2 md:pt-0 md:ml-5 mt-5">
                             <button

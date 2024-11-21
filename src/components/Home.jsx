@@ -1,6 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
+import satisfaction from '../assets/100-satisfaction.png'
+import parentsTrust from '../assets/parents-trust.png'
+import scienceBacked from '../assets/science-backed.png'
 
 const Home = () => {
   const navigate = useNavigate()
@@ -33,8 +36,19 @@ const Home = () => {
               <p className="mb-4 md:mb-8 w-full md:w-3/4 mx-auto md:mx-0 font24-light">
                 Digital Cognitive Assessment & Therapy Tailored for Your Child’s Success
               </p>
+              <div className='flex flex-row w-full'>
+                <div className='flex items-start justify-center' style={{ width: '200px', height: '50px' }}>
+                  <img src={satisfaction} alt="100% Satisfaction Guaranteed" className='w-100' style={{ objectFit: 'contain' }} />
+                </div>
+                <div className='flex items-start justify-center' style={{ width: '200px', height: '50px' }}>
+                  <img src={scienceBacked} alt="Backed by Science" className='w-100' style={{ objectFit: 'contain' }} />
+                </div>
+                <div className='flex items-start justify-center' style={{ width: '200px', height: '50px' }}>
+                  <img src={parentsTrust} alt="Trusted by Parents" className='w-100' style={{ objectFit: 'contain' }} />
+                </div>
+              </div>
               <button
-                className="bg-[#F58220] relative font24-light hover:bg-[#E07B00] text-white font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
+                className="mt-4 bg-[#F58220] relative font24-light hover:bg-[#E07B00] text-white font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
                 onClick={() => navigate('/form')}
                 style={{ zIndex: '23' }}
               >

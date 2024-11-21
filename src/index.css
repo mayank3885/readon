@@ -125,9 +125,6 @@ section {
     max-width: 100% !important;
   }
 
-  .wave-container {
-    margin-top: 300px !important;
-  }
 }
 
 #howdoes {
@@ -408,8 +405,10 @@ section {
     align-items: center !important;
   }
 
-  .wave-container {
-    margin-top: 600px !important;
+  #home img {
+    object-fit: cover !important;
+    max-width: 100px !important;
+    margin-bottom: -100px;
   }
 }
 
@@ -499,10 +498,6 @@ section {
   }
 }
 
-#home img {
-  margin-bottom: -30px;
-  min-width: 350px !important;
-}
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .custom-column {
@@ -517,16 +512,6 @@ section {
     margin-bottom: -10px !important;
     padding-top: 0px !important;
     align-items: flex-start !important;
-  }
-
-  #home img {
-    object-fit: cover !important;
-    min-width: 600px !important;
-    margin-bottom: -100px;
-  }
-
-  .wave-container {
-    margin-top: 200px;
   }
 }
 
@@ -690,7 +675,7 @@ section {
   vertical-align: top;
 }
 
-@media only screen and (min-width: 0) and (max-width: 720px) {
+@media only screen and (min-width: 0) and (max-width: 768px) {
   #reports .left {
     width: 90%;
     display: block;
@@ -702,9 +687,57 @@ section {
   #reports .right img {
     margin-top: -10% !important;
   }
+
+  .wave-container {
+    margin-top: 0px !important
+  }
 }
 
 
-.wave-container img {
-  margin-top: -600px;
+.wave-container {
+  margin-top: -800px
+}
+
+@media screen and (min-width: 1024px) {
+  .wave-container {
+    margin-top: -300px !important;
+  }
+}
+
+@media only screen and (min-width: 768) and (max-width: 1024px) {
+  .wave-container {
+    margin-top: -300px !important;
+  }
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  /* Ensures content wraps when space is limited */
+}
+
+.statistics .elements {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.statistics .elements:nth-child(2) {
+  border-right: 1px solid #d9dfe7;
+  border-left: 1px solid #d9dfe7;
+}
+
+@media (max-width: 786px) {
+  .statistics {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .statistics .elements {
+    border: none !important;
+    padding: 10px 0;
+  }
 }

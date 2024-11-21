@@ -5,6 +5,7 @@ import whychoose2 from "../assets/why-choose-ReadON-2.png";
 import whychoose3 from "../assets/why-choose-ReadON-3.gif";
 import whychoose4 from "../assets/why-choose-readON-4.png";
 // import { FaHandHoldingDollar } from 'react-icons/fa6';
+import satisfaction from '../assets/100-satisfaction.png'
 import { Fade } from 'react-awesome-reveal';
 import { Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -28,12 +29,12 @@ const WhyChoose = () => {
       {/* Why Choose ReadON Section */}
       <div className="text-black py-8 md:py-24 md:mt-12 relative w-full left-0">
         <div className="equal-width width-1800 mx-auto text-center" style={{ marginTop: '-10px' }}>
-          <Fade direction="up" cascade damping={0.4} triggerOnce={true}>
+          <Fade direction="up" cascade damping={0.1} triggerOnce={true}>
             <h2 className="font38-bold text-4xl font-semibold mb-10">Discover What Sets <span className="text-[#FB8500]">ReadON</span> Apart</h2>
 
             <div className="wrapper">
               <div className="readonkey-info">
-                <Fade cascade damping={0.4} triggerOnce={true}>
+                <Fade cascade damping={0.1} triggerOnce={true}>
                   <Row className="readonkey-box flex text-left md:flex-row flex-col justify-between items-center" style={{ gap: '15px' }}>
                     <Col md={12} lg={6} className="align-content-center">
                       <div className="hero-info">
@@ -116,7 +117,11 @@ const WhyChoose = () => {
                     </Col>
                   </Row>
 
+
                   <Row>
+                    <div className='flex items-start justify-center w-100 my-10'>
+                      <img src={satisfaction} alt="100% Satisfaction Guaranteed" className='w-100' style={{ height: '70px', objectFit: 'contain', margin: 'auto' }} />
+                    </div>
                     <Col md={12} lg={12} >
                       <button
                         className="bg-[#F58220] hover:bg-[#E07B00] font24-light text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
