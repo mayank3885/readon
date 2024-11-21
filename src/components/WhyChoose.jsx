@@ -25,7 +25,7 @@ const WhyChoose = () => {
   // }, []);
 
   return (
-    <section id='whychooseus' style={{ background: 'rgb(248, 245, 244)' }}>
+    <section id='whychooseus' style={{ background: '#fff6f4' }}>
       {/* Why Choose ReadON Section */}
       <div className="text-black py-8 md:py-24 md:mt-12 relative w-full left-0">
         <div className="equal-width width-1800 mx-auto text-center" style={{ marginTop: '-10px' }}>

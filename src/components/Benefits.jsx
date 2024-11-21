@@ -12,7 +12,7 @@ const Benefits = () => {
     <section
       className=''
       id="benefits"
-      style={{ background: '#F8F5F4', paddingTop: '70px', paddingBottom: '75px' }}
+      style={{ paddingTop: '70px', paddingBottom: '75px' }}
     >
       <div className="relative flex items-center justify-center width-1800 equal-width" style={{ margin: 'auto' }}>
         {/* Special Shape Image */}
