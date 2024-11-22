@@ -407,7 +407,8 @@ section {
 
   #home img {
     object-fit: cover !important;
-    max-width: 100px !important;
+    max-width: 200px !important;
+    max-height: 50px !important;
     margin-bottom: -100px;
   }
 }

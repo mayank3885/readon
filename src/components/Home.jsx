@@ -36,15 +36,15 @@ const Home = () => {
               <p className="mb-4 md:mb-8 w-full md:w-3/4 mx-auto md:mx-0 font24-light">
                 Digital Cognitive Assessment & Therapy Tailored for Your Child’s Success
               </p>
-              <div className='flex flex-row w-full'>
-                <div className='flex items-start justify-center'>
-                  <img src={satisfaction} alt="100% Satisfaction Guaranteed" className='w-100' style={{ objectFit: 'contain', height: '70px' }} />
+              <div className='flex flex-col md:flex-row w-full'>
+                <div className='flex items-start justify-center' style={{ height: '70px' }}>
+                  <img src={satisfaction} alt="100% Satisfaction Guaranteed" style={{ objectFit: 'contain' }} />
                 </div>
-                <div className='flex items-start justify-center'>
-                  <img src={scienceBacked} alt="Backed by Science" className='w-100' style={{ objectFit: 'contain', height: '70px' }} />
+                <div className='flex items-start justify-center' style={{ height: '70px' }}>
+                  <img src={scienceBacked} alt="Backed by Science" style={{ objectFit: 'contain' }} />
                 </div>
-                <div className='flex items-start justify-center'>
-                  <img src={parentsTrust} alt="Trusted by Parents" className='w-100' style={{ objectFit: 'contain', height: '70px' }} />
+                <div className='flex items-start justify-center' style={{ height: '70px' }}>
+                  <img src={parentsTrust} alt="Trusted by Parents" style={{ objectFit: 'contain' }} />
                 </div>
               </div>
               <button
