@@ -10,19 +10,19 @@ const Approach = () => {
   const content = [
     {
       id: 1,
-      title: 'Consultation',
+      title: 'ReadON Cognitive Assessment',
       description:
         'This digital neuropsychological evaluation assesses cognitive abilities and overall wellness, measuring attention span, memory, reasoning, planning, and coordination while comparing results to peers of the same age and gender.',
     },
     {
       id: 2,
-      title: 'Research and Strategy',
+      title: 'ReadON Cognitive Therapy Sessions',
       description:
         "Our sessions utilize interactive exercises designed to enhance attention, working memory, and executive functions that improve reading/writing fluency and comprehension, tailored to the learner's unique needs.",
     },
     {
       id: 3,
-      title: 'Implementation',
+      title: 'Progress Monitoring and Guidance',
       description:
         'Continuous tracking of progress ensures learners stay on course to meet their objectives, with regular feedback to adjust strategies as necessary.',
     },

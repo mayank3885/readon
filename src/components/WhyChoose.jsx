@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import { FaPuzzlePiece, FaUsers, FaChartLine } from 'react-icons/fa'; // Import icons
 import whychoose1 from "../assets/why-choose-ReadON-1.png";
 import whychoose2 from "../assets/why-choose-ReadON-2.png";
-import whychoose3 from "../assets/why-choose-ReadON-3_update.gif";
+import whychoose3 from "../assets/why-choose-ReadON-3.gif";
 import whychoose4 from "../assets/why-choose-readON-4.png";
 // import { FaHandHoldingDollar } from 'react-icons/fa6';
 import satisfaction from '../assets/100-satisfaction.png'

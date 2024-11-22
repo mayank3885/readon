@@ -40,12 +40,14 @@ const Discover = () => {
                     {/* Video Placeholder with Thumbnail Background and Play Button */}
                     <div className="relative w-full md:w-1/2 flex items-center justify-end">
                         <div
-                            className="relative h-96 w-[35rem] rounded-3xl border-8 flex items-center justify-center bg-cover bg-center thumbnail"
+                            className="relative w-full h-64 md:h-96 flex items-center justify-center thumbnail"
                             style={{
-                                backgroundImage: `url(${youtubethumbnail})`,
-                                borderRadius: '100px',
-                                border: '0',
-                                boxShadow: '#ff977e4f 12px 15px 17px 7px'
+                            backgroundImage: `url(${youtubethumbnail})`,
+                            borderRadius: '100px',
+                            boxShadow: '#ff977e4f 12px 15px 17px 7px',
+                            backgroundSize: 'contain', // Use "contain" to ensure the entire image is visible
+                            backgroundRepeat: 'no-repeat', // Prevent the image from repeating
+                            backgroundPosition: 'center' // Center the image in the div
                             }}
                         >
                             <button
