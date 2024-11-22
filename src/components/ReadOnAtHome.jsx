@@ -18,8 +18,7 @@ const ReadOnAtHome = () => {
         <div id="howdoes" className="boxImg pt-16">
             {/* row section */}
             <div className="howdoes-info width-1800 equal-width">
-                <h2 className="font38-bold font-semibold text-[#000000] text-center">How Does ReadON at Home Work?
-                </h2>
+                <h2 className="font38-bold font-semibold text-[#000000] text-center">With ReadON, Success is as Easy as 1-2-3!</h2>
                 <Fade direction='up' damping={0.4} triggerOnce={true}>
                     <Row>
                         <div className='row-content p-4'>
@@ -31,9 +30,9 @@ const ReadOnAtHome = () => {
                                     </div>
                                     <div className="box-para">
                                         <p className="font24-light">1.</p>
-                                        <h4 className="font24-bold">Sign-Up and Setup</h4>
+                                        <h4 className="font24-bold">ReadON Cognitive Assessment</h4>
                                         <p className="font18-light mt-3">
-                                        Register online, purchase the assessment and set up your account easily from home. Access the cognitive assessment on your preferred device computer, tablet, or smartphone.
+                                            This digital neuropsychological evaluation assesses cognitive abilities and overall wellness, measuring attention span, memory, reasoning, planning, and coordination while comparing results to peers of the same age and gender.
                                         </p>
                                     </div>
                                 </div>
@@ -46,9 +45,9 @@ const ReadOnAtHome = () => {
                                     </div>
                                     <div className="box-para">
                                         <p className="font24-light">2.</p>
-                                        <h4 className="font24-bold">Cognitive Assessment & Detailed Report</h4>
+                                        <h4 className="font24-bold">ReadON Cognitive Therapy Sessions</h4>
                                         <p className="font18-light mt-3">
-                                        Begin with a comprehensive cognitive assessment for your child. Get a detailed report highlighting their strengths, areas for improvement, and specific skills for development.
+                                            Our sessions utilize interactive exercises designed to enhance attention, working memory, and executive functions that improve reading/writing fluency and comprehension, tailored to the learner's unique needs.
                                         </p>
                                     </div>
                                 </div>
@@ -60,23 +59,9 @@ const ReadOnAtHome = () => {
                                     </div>
                                     <div className="box-para">
                                         <p className="font24-light">3.</p>
-                                        <h4 className="font24-bold">FREE Counseling Session</h4>
+                                        <h4 className="font24-bold">Progress Monitoring and Guidance</h4>
                                         <p className="font18-light mt-3">
-                                        Get detailed feedback on your child's cognitive profile to understand their unique abilities and identify specific skills for development.
-                                        </p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col xs={12} sm={6} md={6} lg={6} className="mb-4 custom-column">
-                                <div className="box-item">
-                                    <div className="box-img">
-                                        <img src={cognitiveTherapy} alt="cognitiveTherapy" />
-                                    </div>
-                                    <div className="box-para">
-                                        <p className="font24-light">4.</p>
-                                        <h4 className="font24-bold">FREE Counseling Session</h4>
-                                        <p className="font18-light mt-3">
-                                        Improve specific cognitive skills identified in the assessment through interactive sessions at home. Enhance reading and writing abilities with continuous progress monitoring and adjustments for optimal development.
+                                            Continuous tracking of progress ensures learners stay on course to meet their objectives, with regular feedback to adjust strategies as necessary.
                                         </p>
                                     </div>
                                 </div>
@@ -85,7 +70,8 @@ const ReadOnAtHome = () => {
                         <div className="flex items-center justify-center xs:justify-center" style={{ paddingBottom: '40px' }}>
                             <button
                                 className="bg-[#F58220] font24-light hover:bg-[#E07B00] text-[#0B254C] font-bold text-md py-2 px-6 rounded-md transition duration-300 ease-in-out shadow-md btn btn-xs btn-shadow btn-orange"
-                                onClick={() => navigate('/form')}>
+                                onClick={() => navigate('/form')}
+                            >
                                 Start an Assessment
                             </button>
                         </div>
