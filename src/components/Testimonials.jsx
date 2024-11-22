@@ -52,7 +52,7 @@ export default function Testimonials() {
             <div className="section mb30">
                 <Fade direction='up' damping={0.4} triggerOnce={true}>
                     <h2 className='font38-bold mb-4 font-semibold text-[#000000] text-center' >Ready to Transform Your Child’s Learning?</h2>
-                    <p className='font24-light text-center mb-6 md:mb-12'>Thousands of parents have trusted ReadON to help their children overcome learning challenges and achieve their best.</p>
+                    <p className='font18-light text-center mb-6 md:mb-12'>Thousands of parents have trusted ReadON to help their children overcome learning challenges and achieve their best.</p>
                 </Fade>
             </div>
             {/* row section */}

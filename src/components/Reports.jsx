@@ -15,7 +15,7 @@ const Reports = () => {
                 {/* row section */}
                 <div class="report-container width-1800 flex flex-row md:flex-col equal-width my-20" style={{ margin: 'auto' }}>
                     <div class="left py-10 font38-bold"><p className='mb-4'>Noticeable Improvements in Just 3-4 Months!</p>
-                        <p className='font24-light mb-3'>With ReadON, results aren’t just promised — they’re delivered. Most children show significant improvements in reading fluency, comprehension, and focus within 3-4 months. We provide regular progress reports, so you can see and measure how your child is thriving.</p>
+                        <p className='font18-light mb-3'>With ReadON, results aren’t just promised — they’re delivered. Most children show significant improvements in reading fluency, comprehension, and focus within 3-4 months. We provide regular progress reports, so you can see and measure how your child is thriving.</p>
 
                         <div className='flex items-start my-2'>
                             <img src={scienceBacked} alt="100% Satisfaction Guaranteed" className='w-100' style={{ height: '70px', objectFit: 'contain' }} />
