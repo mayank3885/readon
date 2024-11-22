@@ -42,7 +42,7 @@ const Approach = () => {
               className="text-2xl font-semibold text-black text-center mb-10 font38-bold"
               style={{ lineHeight: '30px' }}
             >
-              Our Comprehensive Approach
+              With ReadON, Success is as Easy as 1-2-3!
             </h2>
             <div className="space-y-10"> {/* Increased space between sections */}
               {content.map((item) => (

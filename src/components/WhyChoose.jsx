@@ -19,7 +19,7 @@ const WhyChoose = () => {
     <section id='whychooseus' style={{ background: '#fff6f4' }}>
       {/* Why Choose ReadON Section */}
       <div className="text-black py-16 md:mt-16 relative w-full left-0">
-        <div className="equal-width width-1800 mx-auto text-center pt-4">
+        <div className="equal-width mx-auto text-center pt-4" style={{ maxWidth: '1400px' }}>
           <Fade direction="up" cascade damping={0.1} triggerOnce={true}>
             <h2 className="font38-bold text-4xl font-semibold mb-10">Discover What Sets <span className="text-[#FB8500]">ReadON</span> Apart</h2>
 

@@ -18,7 +18,7 @@ const ReadOnAtHome = () => {
         <div id="howdoes" className="boxImg pt-16">
             {/* row section */}
             <div className="howdoes-info width-1800 equal-width">
-                <h2 className="font38-bold font-semibold text-[#000000] text-center">With ReadON, Success is as Easy as 1-2-3!</h2>
+                <h2 className="font38-bold font-semibold text-[#000000] text-center">How Does ReadON at Home Work?</h2>
                 <Fade direction='up' damping={0.4} triggerOnce={true}>
                     <Row>
                         <div className='row-content p-4'>

@@ -90,7 +90,7 @@ export default function Awards() {
                     navigation={false}
                     modules={[Navigation, Autoplay]}
                     className="awards"
-                    style={{ maxWidth: '90%' }}
+                    style={{ maxWidth: '100%' }}
                 >
                     {data.map((item) => (
                         <SwiperSlide key={item.id}>

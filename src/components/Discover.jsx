@@ -11,8 +11,8 @@ const Discover = () => {
         <section id='discover' className='bg-white'>
             {/* Discover How ReadON Works Section */}
             <div className="width-1800 equal-width bg-white md:py-20 py-12 flex justify-center" style={{ margin: 'auto' }}>
-                <div className="flex items-center justify-between container" style={{ width: '100%' }}>
-                    <div className="text-left w-100">
+                <div className="flex items-center justify-between container">
+                    <div className="text-left">
                         <h2 className="font-bold mb-4 text-center md:text-left font38-bold" style={{ color: 'hsl(240deg 2.76% 22.88%)' }}>
                             Discover How <span className="text-orange-500">ReadON</span> Works
                         </h2>
