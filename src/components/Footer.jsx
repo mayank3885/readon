@@ -101,17 +101,17 @@ const Footer = () => {
                   <div className="social_icon mt-5">
                     <ul>
                       <li>
-                        <Link to="https://www.facebook.com/search/top?q=reading%20matters%20foundations" target="_blank">
+                        <Link to="https://www.facebook.com/ReadON.Arabia/?ref=page_internal" target="_blank">
                           <img src={Facebook} alt="Facebook" />
                         </Link>
                       </li>
                       <li>
-                        <Link to="https://www.instagram.com/readingmattersfoundations/" target="_blank">
+                        <Link to="https://www.instagram.com/readon.arabia/" target="_blank">
                           <img src={insta} alt="insta" />
                         </Link>
                       </li>
                       <li>
-                        <Link to="https://www.linkedin.com/company/reading-matters-foundation/" target="_blank">
+                        <Link to="https://www.linkedin.com/company/readon-arabia/" target="_blank">
                           <img src={linkdin} alt="linkdin" />
                         </Link>
                       </li>
@@ -125,7 +125,7 @@ const Footer = () => {
       </div>
       <div className="wrapper" style={{ background: '#fff6f4' }}>
         <Row>
-          <Col className="py-10">
+          <Col className="py-8">
             <p className="text-center font15" style={{ letterSpacing: '1.5px', color: 'rgb(57, 57, 60)' }}><i>Copyright © {new Date().getFullYear()} Orange Neurosciences Corporation</i></p>
           </Col>
         </Row>

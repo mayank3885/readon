@@ -52,6 +52,11 @@ code {
 }
 
 
+.font15 {
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+}
+
 .font16-light {
   font-size: calc(16px * var(--scale-factor));
   font-weight: 400;

@@ -65,12 +65,19 @@ export default function Testimonials() {
 
     const loadYTAPI = () => {
         return new Promise((resolve) => {
-            if (window.YT) {
+            if (window.YT && window.YT.Player) {
                 resolve(window.YT);
             } else {
                 const script = document.createElement('script');
                 script.src = 'https://www.youtube.com/iframe_api';
-                script.onload = () => resolve(window.YT);
+                script.onload = () => {
+                    const interval = setInterval(() => {
+                        if (window.YT && window.YT.Player) {
+                            clearInterval(interval);
+                            resolve(window.YT);
+                        }
+                    }, 100);
+                };
                 document.body.appendChild(script);
             }
         });
@@ -80,6 +87,19 @@ export default function Testimonials() {
         const initializePlayers = async () => {
             const YT = await loadYTAPI();
             setYT(YT);
+
+            if (videoRefs.current.length > 0) {
+                videoRefs.current.forEach((iframe, index) => {
+                    if (iframe) {
+                        const player = new YT.Player(iframe, {
+                            events: {
+                                'onStateChange': handlePlayPause,
+                            },
+                        });
+                        console.log(`Player initialized for video ${index + 1}`);
+                    }
+                });
+            }
         };
 
         initializePlayers();
@@ -100,7 +120,6 @@ export default function Testimonials() {
 
     return (
         <div id="testimonial" className="width-1800 equal-width pt-20" style={{ margin: 'auto' }}>
-            {/* Heading section */}
             <div className="section mb30">
                 <Fade direction="up" damping={0.4} triggerOnce={true}>
                     <h2 className="font38-bold mb-4 font-semibold text-[#000000] text-center">
@@ -111,7 +130,6 @@ export default function Testimonials() {
                     </p>
                 </Fade>
             </div>
-            {/* Row section */}
             <Fade direction="up" damping={0.4} triggerOnce={true}>
                 <Swiper
                     centeredSlides={true}
