@@ -25,7 +25,7 @@ const Reports = () => {
                         </button>
                     </div>
                     <div class="right">
-                        <div className='img-container relative md:absolute' style={{ bottom: 0, right: 0, width: '60%' }}>
+                        <div className='img-container relative md:absolute' style={{ bottom: 0, right: 0, width: '56%' }}>
                             <img src={report} alt="reports" />
                         </div>
                     </div>
