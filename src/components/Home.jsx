@@ -37,10 +37,10 @@ const Home = () => {
 
               <div className='flex flex-row w-full my-5 justify-center md:justify-start'>
                 <div className='flex items-start justify-center badge-container'>
-                  <img src={satisfaction} alt="100% Satisfaction Guaranteed" style={{ objectFit: 'contain' }} />
+                  <img src={satisfaction} alt="100% Satisfaction Guaranteed" style={{ objectFit: 'contain', maxWidth: '80%' }} />
                 </div>
                 <div className='flex items-start justify-center badge-container ml-2 md:ml-5'>
-                  <img src={parentsTrust} alt="Trusted by Parents" style={{ objectFit: 'contain' }} />
+                  <img src={parentsTrust} alt="Trusted by Parents" style={{ objectFit: 'contain', maxWidth: '80%' }} />
                 </div>
               </div>
 
