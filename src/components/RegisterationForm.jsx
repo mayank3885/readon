@@ -46,6 +46,7 @@ const RegisterationForm = () => {
 
             //send data to mail even
             try {
+                console.log(process.env.REACT_APP_BREVO_KEY)
                 const response = await fetch('https://api.brevo.com/v3/contacts', {
                     method: 'POST',
                     headers: {
@@ -158,6 +159,7 @@ const RegisterationForm = () => {
                                     value={formData.cname}
                                     onChange={(e) => handleChange(e.target.value, null, e)}
                                     required
+                                    style={{ width: '100%' }}
                                 />
                                 {formErrors.cname && (
                                     <div className="text-danger">{formErrors.cname}</div>
@@ -172,6 +174,7 @@ const RegisterationForm = () => {
                                     value={formData.pemail}
                                     onChange={(e) => handleChange(e.target.value, null, e)}
                                     required
+                                    style={{ width: '100%' }}
                                 />
                                 {formErrors.pemail && (
                                     <div className="text-danger">{formErrors.pemail}</div>
@@ -186,6 +189,7 @@ const RegisterationForm = () => {
                                     value={formData.pname}
                                     onChange={(e) => handleChange(e.target.value, null, e)}
                                     required
+                                    style={{ width: '100%' }}
                                 />
                                 {formErrors.pname && (
                                     <div className="text-danger">{formErrors.pname}</div>

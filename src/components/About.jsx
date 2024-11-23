@@ -46,9 +46,6 @@ const About = () => {
           {/* Body text */}
           < p className=" mx-auto font24-light leading-relaxed" style={{ color: 'white' }}>
             We understand the challenges children face in developing strong reading skills. Whether it’s difficulty focusing, struggling with reading comprehension, or low confidence, these hurdles can affect their learning journey.
-          </p >
-
-          < p className=" mx-auto mt-2 font24-light leading-relaxed" style={{ color: 'white' }}>
             ReadON is an advanced digital cognitive therapy that begins with a comprehensive assessment to identify your child’s unique cognitive reading challenges and strengths. This tailored approach ensures that your child receives the targeted neuroplasticity-based support they need to enhance their reading fluency, comprehension, and focus, helping them thrive academically.
           </p >
 

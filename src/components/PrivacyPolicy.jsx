@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import leftArrow from '../assets/arrow-left.svg'
+
+
 const PrivacyPolicy = () => {
     const location = useLocation();
 
@@ -7,8 +10,11 @@ const PrivacyPolicy = () => {
         document.title = 'Read On | Privacy Policy'
     }, [location]);
     return (
-        <div className='static-content-wrapper mt-20' id='privacy-policy'>
+        <section className='static-content-wrapper' id='privacy-policy'>
             <div className='policyWrapper'>
+                <button className="transition focus:outline-none mb-5">
+                    <Link to="/" className='flex items-center font24-light'><img src={leftArrow} alt="back" style={{ width: '30px', marginRight: '10px' }} /> Go Back</Link>
+                </button>
                 <h3 className='font38-bold'>PRIVACY POLICY </h3>
                 <h4 className='font24-light'>ReadOn AI</h4>
                 <p className='mb-5 font18-light'>Our Privacy Policy was posted on 12 July 2024. It governs the privacy terms of our Website, located at
@@ -197,7 +203,7 @@ const PrivacyPolicy = () => {
                     If you have any questions about our Privacy Practices or this Policy, please contact us by email to INFO@READINGMATTERS.IN
                 </p>
             </div>
-        </div>
+        </section>
     )
 }
 

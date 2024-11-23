@@ -36,7 +36,7 @@ const Approach = () => {
   return (
     <section id="approach" className="pt-16">
       <div className="p-6 md:p-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="width-1800 equal-width mx-auto">
           <Fade direction="up" cascade damping={0.5} triggerOnce={true}>
             <h2
               className="text-2xl font-semibold text-black text-center mb-10 font38-bold"
@@ -62,7 +62,7 @@ const Approach = () => {
                     style={{ background: '#F8F5F4', marginBottom: '-10px' }}
                   >
                     <h3>
-                      {String(item.id).padStart(2, '0')} {item.title}
+                      {String(item.id).padStart(2, '0')}. {item.title}
                     </h3>
                     <span>
                       {expandedSection === item.id ? '-' : '+'}

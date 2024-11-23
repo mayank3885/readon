@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'
+import leftArrow from '../assets/arrow-left.svg'
 
 const TermsOfUse = () => {
     const location = useLocation();
@@ -10,6 +11,9 @@ const TermsOfUse = () => {
 
     return (
         <section id='terms-of-use' className='static-content-wrapper mt-20'>
+            <button className="transition focus:outline-none mb-5">
+                <Link to="/" className='flex items-center font24-light'><img src={leftArrow} alt="back" style={{ width: '30px', marginRight: '10px' }} /> Go Back</Link>
+            </button>
             {/* Terms of use */}
             <h3 className='font38-bold'>TERMS OF USE</h3>
             <h4 className='font24-light'>ReadOn AI</h4>

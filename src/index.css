@@ -51,6 +51,18 @@ code {
   }
 }
 
+
+.font16-light {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.font16-bold {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 700;
+}
+
+
 .font18-light {
   font-size: calc(18px * var(--scale-factor));
   font-weight: 400;
@@ -117,14 +129,22 @@ section {
     padding: 50px auto !important;
   }
 
-  #howdoes .row {
-    padding: 20px 0px !important;
-  }
 
   #awards .swiper {
     max-width: 100% !important;
   }
 
+  #home .badge-container {
+    max-width: 140px !important;
+  }
+
+  .w-55 {
+    width: 100% !important;
+  }
+
+  .w-70 {
+    width: 100% !important;
+  }
 }
 
 #howdoes {
@@ -145,7 +165,6 @@ section {
 
 #howdoes .howdoes-info .box-item .box-img {
   width: 130px;
-  margin: auto;
   position: relative;
 }
 
@@ -366,6 +385,35 @@ section {
   max-width: 1800px;
 }
 
+#home {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  min-width: 350px !important;
+  margin-bottom: -50px !important;
+}
+
+#home .badge-container {
+  position: relative;
+  z-index: 20;
+  max-width: 180px;
+}
+
 @media screen and (max-width: 800px) {
   #footer .subscribe-list {
     width: auto;
@@ -405,11 +453,13 @@ section {
     align-items: center !important;
   }
 
-  #home img {
-    object-fit: cover !important;
-    max-width: 200px !important;
-    max-height: 50px !important;
-    margin-bottom: -100px;
+  .hero-img {
+    position: static;
+  }
+
+  .hero-img img {
+    max-width: 120% !important;
+    margin-right: -35%;
   }
 }
 
@@ -424,7 +474,7 @@ section {
   margin-top: -28px;
 }
 
-#discover .container {
+#discover .discover-container {
   flex-direction: row;
 }
 
@@ -449,22 +499,22 @@ section {
 }
 
 @media screen and (max-width: 1000px) {
-  #discover .container {
+  #discover .discover-container {
     flex-direction: column;
   }
 
-  #discover .container .text-left {
+  #discover .discover-container .text-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
   }
 
-  #discover .container .thumbnail {
+  #discover .discover-container .thumbnail {
     height: 250px !important;
   }
 
-  #discover .container .text-left h2 {
+  #discover .discover-container .text-left h2 {
     text-align: center;
   }
 
@@ -505,15 +555,25 @@ section {
     width: 50% !important;
   }
 
+  .special-shape-img {
+    display: none !important;
+  }
+
   .arrow {
     display: none;
   }
 
   #home {
-    margin-bottom: -10px !important;
-    padding-top: 0px !important;
-    align-items: flex-start !important;
+    padding-bottom: 50px !important;
+    padding-top: 100px !important;
   }
+
+  .hero-img img {
+    object-fit: cover !important;
+    min-width: 600px !important;
+    margin-bottom: -100px;
+  }
+
 }
 
 #whychooseus .filter-buttons {
@@ -547,7 +607,7 @@ section {
 }
 
 .custom-column {
-  width: 33%;
+  width: 25%;
 }
 
 .paymentform .payment-img {
@@ -603,7 +663,7 @@ section {
 }
 
 .equal-width {
-  width: 85% !important;
+  width: 80% !important;
 }
 
 #readonkey {
@@ -620,7 +680,7 @@ section {
 }
 
 .readonkey-image {
-  width: 380px;
+  width: 420px;
   /* margin: auto; // Commented out */
 }
 
@@ -644,8 +704,9 @@ section {
 /* Media query for max-width: 768px */
 @media (max-width: 768px) {
   .readonkey-image {
-    max-width: 100%;
-    margin: 10px 0px;
+    max-width: 350px !important;
+    width: 100%;
+    margin: 10px auto;
   }
 
   .readonkey-box p {
@@ -663,7 +724,7 @@ section {
 }
 
 #reports .left {
-  width: 40%;
+  width: 35%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -697,12 +758,12 @@ section {
   }
 
   #reports .right .img-container {
-    top: 450px;
+    top: 350px;
     width: 100%;
   }
 
   .report-container {
-    min-height: 680px;
+    min-height: 550px;
   }
 }
 
@@ -775,6 +836,7 @@ section {
 
   #reports .right {
     width: 100% !important;
+    margin-bottom: -10px;
   }
 
   #reports .right .img-container {
@@ -785,7 +847,7 @@ section {
   .report-container {
     position: relative !important;
     flex-direction: column !important;
-    min-height: 500px !important;
+    min-height: 300px !important;
   }
 }
 
@@ -794,4 +856,18 @@ section {
   padding: 0 15px;
   height: 100%;
   margin: 80px auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .equal-width {
+    width: 90% !important;
+  }
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.w-70 {
+  width: 70%;
 }

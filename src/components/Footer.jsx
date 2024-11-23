@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 import Facebook from '../assets/facebook.png';
 import insta from '../assets/insta.png';
 import linkdin from '../assets/linkdin.png';
-import footer_logo from '../assets/logo3.png';
+import footer_logo from '../assets/logo32.png';
 
 const Footer = () => {
   const handleClickTop = () => {

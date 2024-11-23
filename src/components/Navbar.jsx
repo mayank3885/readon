@@ -24,8 +24,8 @@ const Navbar = () => {
         </Fade>
         {/* Desktop Navbar Links */}
         <Fade direction='top' damping={0.8} triggerOnce={true}>
-          <div className="hidden lg:flex flex-grow justify-center max-w-screen-xl w-full font18-bold" style={{ maxWidth: '1600px' }}>
-            <div className="flex space-x-6 justify-center w-full max-w-screen-xl">
+          <div className="hidden lg:flex flex-grow justify-center max-w-screen-xl w-full font16-bold" style={{ maxWidth: '1600px' }}>
+            <div className="flex space-x-6 justify-center w-full max-w-screen-xl" style={{ color: 'rgb(57, 57, 60)' }}>
               <Link to="home" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Home</Link>
               <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">About</Link>
               <Link to="whychooseus" smooth={true} duration={500} className="cursor-pointer hover:text-gray-600">Why Choose Us?</Link>
@@ -48,6 +48,9 @@ const Navbar = () => {
               <img src={flag} alt="India Flag" className="h-5 w-5" />
               <span>IN</span>
             </button> */}
+            <button className="bg-[#FB8500] font18-light text-white px-3 py-1 rounded hover:bg-[#dc933f] transition focus:outline-none" style={{ width: '95px' }}>
+              Sign In
+            </button>
           </div>
         </Fade>
 
@@ -81,9 +84,9 @@ const Navbar = () => {
               </button> */}
             </div>
 
-            {/* <button className="bg-[#FB8500] text-white rounded hover:bg-[#dc933f] transition focus:outline-none px-2 py-1">
+            <button className="bg-[#FB8500] text-white rounded hover:bg-[#dc933f] transition focus:outline-none px-2 py-1">
               Sign In
-            </button> */}
+            </button>
           </div>
         )}
       </nav>

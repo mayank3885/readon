@@ -18,10 +18,10 @@ const Benefits = () => {
         {/* Special Shape Image */}
         <Fade direction="left" cascade damping={0.2} triggerOnce={true}>
           <div
-            className="relative  top-0 w-[40rem] h-[45rem] mt-3 opacity-100 lg:w-[600px] lg:h-[500px] lg:left-[4%] lg:-top-2 special-shape-img"
+            className="relative  top-0 w-[40rem] h-[45rem] mt-3 opacity-100 lg:w-[600px] lg:h-[500px] lg:-top-2 special-shape-img"
             style={{
               backgroundImage: `url(${specialshapde})`,
-              backgroundSize: '150%',
+              backgroundSize: '80%',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               minWidth: '500px',

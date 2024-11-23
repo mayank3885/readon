@@ -14,7 +14,7 @@ import Discover from './components/Discover';
 import Character from './components/Characters';
 import { Route, Routes } from 'react-router-dom';
 import RegisterationForm from './components/RegisterationForm';
-import WaveContainer from './components/WaveContainer';
+// import WaveContainer from './components/WaveContainer';
 import Reports from './components/Reports';
 import TermsOfUse from './components/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -30,7 +30,7 @@ function App() {
             <>
               <Navbar />
               <Home />
-              <WaveContainer />
+              {/* <WaveContainer /> */}
               <About />
               <Discover />
               <WhyChoose />

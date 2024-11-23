@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import leftArrow from '../assets/arrow-left.svg'
 
 const RefundPolicy = () => {
     const location = useLocation();
@@ -9,10 +10,13 @@ const RefundPolicy = () => {
     }, [location]);
 
     return (
-        <div className='static-content-wrapper mt-20' id='privacy-policy'>
+        <div className='static-content-wrapper' id='privacy-policy'>
             <div className='policyWrapper'>
+                <button className="transition focus:outline-none mb-5">
+                    <Link to="/" className='flex items-center font24-light'><img src={leftArrow} alt="back" style={{ width: '30px', marginRight: '10px' }} /> Go Back</Link>
+                </button>
                 <h3 className='font38-bold'> REFUND & CANCELLATION POLICY </h3>
-                <h4 className='font24-light'>ReadOn AI</h4>
+                <h4 className='font24-light mt-5'>ReadOn AI</h4>
                 <p className='font18-light mb-2'>
                     Our Refund and Cancellation Policy was posted on 12 June 2023. It governs the services through our Website, located at
                     <u> <Link className='text-black' to="https://www.readingmatters.in" target="_blank"> https://www.readingmatters.in</Link></u>

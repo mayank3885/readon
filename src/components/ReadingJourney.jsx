@@ -9,7 +9,7 @@ const ReadingJourney = () => {
         <section
             id="journey"
             className="pt-10"
-            style={{ background: '#f0870b', minHeight: '250px' }}
+            style={{ background: '#f58220', minHeight: '250px' }}
         >
             <Fade direction="up" cascade damping={0.2} triggerOnce={true}>
                 <div className="content flex width-1800 equal-width" style={{ flexDirection: 'column', alignItems: 'center', color: 'white', margin: 'auto' }}>

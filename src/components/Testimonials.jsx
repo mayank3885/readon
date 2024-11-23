@@ -74,7 +74,7 @@ export default function Testimonials() {
                             <div className="video-container">
                                 <iframe
                                     width="100%"
-                                    height="300px"
+                                    height="250px"
                                     src={item.video}
                                     title={item.title}
                                     allowFullScreen
