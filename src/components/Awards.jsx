@@ -95,7 +95,7 @@ export default function Awards() {
                     {data.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className="video-container flex items-center" style={{ flexDirection: 'column' }}>
-                                <img src={item.image} alt={item.title} style={{ maxWidth: '200px' }} />
+                                <img src={item.image} alt={item.title} />
                             </div>
                         </SwiperSlide>
                     ))}

@@ -19,7 +19,7 @@ const RefundPolicy = () => {
                 <h4 className='font24-light mt-5'>ReadOn AI</h4>
                 <p className='font18-light mb-2'>
                     Our Refund and Cancellation Policy was posted on 12 June 2023. It governs the services through our Website, located at
-                    <u> <Link className='text-black' to="https://www.readingmatters.in" target="_blank"> https://www.readingmatters.in</Link></u>
+                    <u> <Link className='text-black' to="https://www.readon-arabia.com" target="_blank"> https://www.readon-arabia.com</Link></u>
                 </p>
                 <p className='font18-light mb-2'>
                     Our focus is on complete customer satisfaction. Please read the fine print of each deal before buying it. It provides all the details about the services or the products you purchase.
@@ -73,7 +73,7 @@ const RefundPolicy = () => {
                     Questions About Our Refund & Cancellation Policy
                 </p>
                 <p className='font18-light mb-6'>
-                    If you have any questions about this Policy, please get in touch with us by email to info@readingmatters.in
+                    If you have any questions about this Policy, please get in touch with us by email to info@readon-arabia.com
                 </p>
             </div>
         </div>

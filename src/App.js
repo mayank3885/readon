@@ -19,10 +19,12 @@ import Reports from './components/Reports';
 import TermsOfUse from './components/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import RefundPolicy from './components/RefundPolicy';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route
           path='/*'

@@ -19,7 +19,7 @@ const TermsOfUse = () => {
             <h4 className='font24-light'>ReadOn AI</h4>
             <p className='font18-light mb-16'>Last updated: November 15, 2024</p>
 
-            <p className='font18-light mb-6'>PLEASE READ THIS ENTIRE AGREEMENT AND INDICATE WHETHER YOU AGREE TO ITS TERMS. IT IS A CONTRACT BETWEEN YOU AND SYNG COGNITIVE SCIENCES PVT. LTD. ("SYNG") AND APPLIES TO YOUR ACCESS AND USE OF www.ReadONIndia.com and READON.AI PRODUCTS AND SERVICES (COLLECTIVELY, "SERVICES"). ACCESS TO SERVICES IS EXPRESSLY CONDITIONED UPON ACCEPTANCE OF THIS AGREEMENT'S TERMS. IF YOU DO NOT AGREE TO THESE TERMS, YOU WILL NOT BE ABLE TO CREATE AN ACCOUNT ON www.ReadONIndia.com and READON.AI ("ACCOUNT") AND WILL NOT BE ABLE TO ACCESS SERVICES.</p>
+            <p className='font18-light mb-6'>PLEASE READ THIS ENTIRE AGREEMENT AND INDICATE WHETHER YOU AGREE TO ITS TERMS. IT IS A CONTRACT BETWEEN YOU AND READON ARABIA AND APPLIES TO YOUR ACCESS AND USE OF www.ReadONIndia.com and READON.AI PRODUCTS AND SERVICES (COLLECTIVELY, "SERVICES"). ACCESS TO SERVICES IS EXPRESSLY CONDITIONED UPON ACCEPTANCE OF THIS AGREEMENT'S TERMS. IF YOU DO NOT AGREE TO THESE TERMS, YOU WILL NOT BE ABLE TO CREATE AN ACCOUNT ON www.ReadONIndia.com and READON.AI ("ACCOUNT") AND WILL NOT BE ABLE TO ACCESS SERVICES.</p>
 
             <p className='font18-light mb-6'>IF YOU ARE ENTERING INTO THIS AGREEMENT ON BEHALF OF A COMPANY OR OTHER LEGAL ENTITY, YOU REPRESENT THAT YOU HAVE THE AUTHORITY TO BIND SUCH ENTITY TO THESE TERMS AND CONDITIONS, IN WHICH CASE THE TERMS "YOU" OR "YOUR" SHALL REFER TO SUCH ENTITY. IF YOU DO NOT HAVE SUCH AUTHORITY, OR IF YOU DO NOT AGREE WITH THESE TERMS AND CONDITIONS, YOU MUST NOT ACCEPT THIS AGREEMENT AND MAY NOT USE THE SERVICES.</p>
 
@@ -30,7 +30,7 @@ const TermsOfUse = () => {
             {/* Definitions */}
             <h4 className="font24-bold py-6">Definitions</h4>
 
-            <p className='font18-light mb-6'>"Content" or "Data" means all information, data, metrics and calculations provided by SYNG, whether obtained from publicly available sources, third-party content providers, or through original SYNG, which you can access through our Services.</p>
+            <p className='font18-light mb-6'>"Content" or "Data" means all information, data, metrics and calculations provided by READON ARABIA, whether obtained from publicly available sources, third-party content providers, or through original READON ARABIA, which you can access through our Services.</p>
 
             <p className='font18-light mb-6'>"Malicious Code" means scripts, agents, viruses, Trojan horses and other harmful or malicious code.</p>
 
@@ -44,7 +44,7 @@ const TermsOfUse = () => {
 
             <p className='font18-light mb-6'>"Users" means individuals who are authorized by You to use the Services, for whom You have purchased a subscription, and who have been supplied user identifications and passwords by You (or by Us at Your request). Users may include but are not limited to Your employees, consultants, contractors and agents; or third parties with which You transact business.</p>
 
-            <p className='font18-light mb-6'>"We," "Us," or "Our" means SYNG, described in Section 10 (Who You Are Contracting With, Notices, Governing Law and Jurisdiction).</p>
+            <p className='font18-light mb-6'>"We," "Us," or "Our" means READON ARABIA, described in Section 10 (Who You Are Contracting With, Notices, Governing Law and Jurisdiction).</p>
 
             <p className='font18-light mb-6'>"You" or "Your" means the company or other legal entity for which you are accepting this Agreement.</p>
 
@@ -191,14 +191,14 @@ const TermsOfUse = () => {
 
             <h2 className='font18-bold mb-1'>5.2 Disclaimer</h2>
             <p className='font18-light mb-1'>
-                EXCEPT AS EXPRESSLY PROVIDED HEREIN, THE SERVICES, THE WEBSITE AND ALL CONTENT PROVIDED THEREIN ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. NONE OF US, OUR AFFILIATES, SUBSIDIARIES OR OUR OR THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES OR AGENTS (COLLECTIVELY THE "SYNG PARTIES") GUARANTEES THE ACCURACY, COMPLETENESS, TIMELINESS, RELIABILITY, SUITABILITY OR USEFULNESS OF ANY PORTION OF THE SERVICES, THE WEBSITE OR ANY CONTENT PROVIDED THEREIN. NONE OF THE SYNG PARTIES WARRANT THAT THE SERVICES, THE WEBSITE OR ANY CONTENT PROVIDED THEREIN WILL BE UNINTERRUPTED OR ERROR-FREE OR THAT THE WEBSITE, ITS SERVER OR ANY FILES AVAILABLE FOR DOWNLOADING THROUGH THE WEBSITE ARE FREE OF COMPUTER VIRUSES OR OTHER HARMFUL ELEMENTS. YOU EXPRESSLY AGREE THAT THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SERVICES, THE WEBSITE AND THE ACCURACY, TIMELINESS OR COMPLETENESS OF THE CONTENT PROVIDED THEREIN IS ASSUMED SOLELY BY YOU. NONE OF THE SYNG PARTIES MAKE ANY, AND HEREBY SPECIFICALLY DISCLAIM ANY AND ALL, REPRESENTATIONS, ENDORSEMENTS, GUARANTEES, AND WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE SERVICES, THE WEBSITE, OR THE CONTENT PROVIDED THEREIN, INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT OF THIRD-PARTY RIGHTS. YOUR SOLE AND EXCLUSIVE REMEDY FOR DISSATISFACTION WITH THE SERVICES, THE WEBSITE OR THE CONTENT PROVIDED THEREIN IS TO STOP USING THE SERVICES, THE WEBSITE AND/OR SUCH. SYNG PARTIES ARE NOT RESPONSIBLE FOR AND SHALL HAVE NO LIABILITY WITH RESPECT TO THE ACTIONS OR OMISSIONS OF ANYONE USING THE SITE. AS A CONDITION TO YOUR USE OF OUR THE SITE, YOU HEREBY WAIVE AND RELEASE ANY AND ALL CLAIMS, CAUSES OF ACTION OR OTHER RIGHTS THAT YOU MIGHT HAVE AGAINST ANY OF THE SYNG PARTIES ARISING OUT OF OR RELATING TO THE SUBMISSION AND REVIEW OF ANY MATERIALS MADE AVAILABLE THROUGH THE SITE.
+                EXCEPT AS EXPRESSLY PROVIDED HEREIN, THE SERVICES, THE WEBSITE AND ALL CONTENT PROVIDED THEREIN ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. NONE OF US, OUR AFFILIATES, SUBSIDIARIES OR OUR OR THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES OR AGENTS (COLLECTIVELY THE "READON ARABIA PARTIES") GUARANTEES THE ACCURACY, COMPLETENESS, TIMELINESS, RELIABILITY, SUITABILITY OR USEFULNESS OF ANY PORTION OF THE SERVICES, THE WEBSITE OR ANY CONTENT PROVIDED THEREIN. NONE OF THE READON ARABIA PARTIES WARRANT THAT THE SERVICES, THE WEBSITE OR ANY CONTENT PROVIDED THEREIN WILL BE UNINTERRUPTED OR ERROR-FREE OR THAT THE WEBSITE, ITS SERVER OR ANY FILES AVAILABLE FOR DOWNLOADING THROUGH THE WEBSITE ARE FREE OF COMPUTER VIRUSES OR OTHER HARMFUL ELEMENTS. YOU EXPRESSLY AGREE THAT THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SERVICES, THE WEBSITE AND THE ACCURACY, TIMELINESS OR COMPLETENESS OF THE CONTENT PROVIDED THEREIN IS ASSUMED SOLELY BY YOU. NONE OF THE READON ARABIA PARTIES MAKE ANY, AND HEREBY SPECIFICALLY DISCLAIM ANY AND ALL, REPRESENTATIONS, ENDORSEMENTS, GUARANTEES, AND WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE SERVICES, THE WEBSITE, OR THE CONTENT PROVIDED THEREIN, INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT OF THIRD-PARTY RIGHTS. YOUR SOLE AND EXCLUSIVE REMEDY FOR DISSATISFACTION WITH THE SERVICES, THE WEBSITE OR THE CONTENT PROVIDED THEREIN IS TO STOP USING THE SERVICES, THE WEBSITE AND/OR SUCH. READON ARABIA PARTIES ARE NOT RESPONSIBLE FOR AND SHALL HAVE NO LIABILITY WITH RESPECT TO THE ACTIONS OR OMISSIONS OF ANYONE USING THE SITE. AS A CONDITION TO YOUR USE OF OUR THE SITE, YOU HEREBY WAIVE AND RELEASE ANY AND ALL CLAIMS, CAUSES OF ACTION OR OTHER RIGHTS THAT YOU MIGHT HAVE AGAINST ANY OF THE READON ARABIA PARTIES ARISING OUT OF OR RELATING TO THE SUBMISSION AND REVIEW OF ANY MATERIALS MADE AVAILABLE THROUGH THE SITE.
             </p>
 
             {/* Indemnification */}
             <h4 className="font24-bold py-6">Indemnification</h4>
 
             <p className='font18-light mb-6'>
-                You agree to indemnify and hold SYNG COGNITIVE SCIENCES PVT. LTD. harmless, including costs and attorneys' fees, from any claim or demand made by any third party due to or arising out of (i) your access to or use of the Services, (ii) your violation of the terms of this Agreement, or (iii) the infringement by you, or any third party using your account, of any intellectual property or other rights of any person or entity. We reserve the right, at your expense, to assume the exclusive defence and control of any matter for which you are required to indemnify us, and you agree to cooperate with our defence of these claims. You agree not to settle any matter without the prior written consent of Us.
+                You agree to indemnify and hold READON ARABIA harmless, including costs and attorneys' fees, from any claim or demand made by any third party due to or arising out of (i) your access to or use of the Services, (ii) your violation of the terms of this Agreement, or (iii) the infringement by you, or any third party using your account, of any intellectual property or other rights of any person or entity. We reserve the right, at your expense, to assume the exclusive defence and control of any matter for which you are required to indemnify us, and you agree to cooperate with our defence of these claims. You agree not to settle any matter without the prior written consent of Us.
             </p>
 
             {/* Limitation of Liability */}
@@ -247,7 +247,7 @@ const TermsOfUse = () => {
 
             <h2 className='font18-bold mb-1'>9.1 General</h2>
             <p className='font18-light mb-6'>
-                You are contracting with the following company under this Agreement, and You should direct notices under this Agreement to SYNG COGNITIVE SCIENCES PVT. LTD.
+                You are contracting with the following company under this Agreement, and You should direct notices under this Agreement to READON ARABIA
             </p>
 
             <h2 className='font18-bold mb-1'>9.2 Manner of Giving Notice</h2>

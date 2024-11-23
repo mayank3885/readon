@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
                 <h3 className='font38-bold'>PRIVACY POLICY </h3>
                 <h4 className='font24-light'>ReadOn AI</h4>
                 <p className='mb-5 font18-light'>Our Privacy Policy was posted on 12 July 2024. It governs the privacy terms of our Website, located at
-                    <u> <Link className='text-black' to="https://www.readingmatters.in" target="_blank"> https://www.readingmatters.in</Link></u>
+                    <u> <Link className='text-black' to="https://www.readon-arabia.com" target="_blank"> https://www.readon-arabia.com</Link></u>
                 </p>
                 <p className='mb-8 font18-light'>Your information is important to READING MATTERS FOUNDATION (RMF). We respect your privacy and endeavour to protect your privacy. This Privacy Policy (“Policy”) provides information about the personal information that RMF collects in which we share and use and what choices are available to you before you decide to provide us your information. WE ENCOURAGE YOU TO CAREFULLY AND FULLY READING THE POLICY BEFORE YOU USE OUR WEBSITE. We further welcome your questions and are glad to answer your concerns and suggestions.</p>
 
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
                     <h4 className='weight700 textChildHeading'>Collection of Personal Information</h4>
                 </div>
                 <p className='mb-8 font18-light'>
-                    At <u><Link className='text-black' to="https://www.readingmatters.in" target="_blank">https://www.readingmatters.in</Link></u>  you can make requests, purchase subscriptions and register to receive materials/information. To realize some of the functionalities, we may collect and retain your personal information in various ways. The types of personal information collected via these pages may include your name, name of your company, address, telephone number, fax number, e-mail address and professional information.
+                    At <u><Link className='text-black' to="https://www.readon-arabia.com" target="_blank">https://www.readon-arabia.com</Link></u>  you can make requests, purchase subscriptions and register to receive materials/information. To realize some of the functionalities, we may collect and retain your personal information in various ways. The types of personal information collected via these pages may include your name, name of your company, address, telephone number, fax number, e-mail address and professional information.
                 </p>
 
                 {/* heading */}
@@ -40,14 +40,14 @@ const PrivacyPolicy = () => {
                     Personal information is collected for necessary business purposes and better understand and serve you as a customer or a
                     user of our websites. We promise to collect, share, transfer and use personal information with adequate notice or consent.
                     We uncompromisingly stand by this promise. Personal information will be collected on various occasions when applicable.
-                    For example, when you choose to register with <u><Link className='text-black' to="https://www.readingmatters.in" target="_blank">https://www.readingmatters.in</Link></u> as a registered user,
+                    For example, when you choose to register with <u><Link className='text-black' to="https://www.readon-arabia.com" target="_blank">https://www.readon-arabia.com</Link></u> as a registered user,
                     subscribe to newsletters, marketing and support materials, participate in reward or promotion programs, surveys, etc.
                 </p>
 
                 {/* heading */}
                 <div className="my-4">
-                    <p className='mb-8 font18-light'>If you merely browse <u><Link className='text-black' to="https://www.readingmatters.in" target="_blank">https://www.readingmatters.in </Link> </u>
-                        you will be recorded as a hit only, and <u><Link className='text-black' to="https://www.readingmatters.in" target="_blank">https://www.readingmatters.in</Link></u> will not collect any personal information from you unless otherwise stated.</p>
+                    <p className='mb-8 font18-light'>If you merely browse <u><Link className='text-black' to="https://www.readon-arabia.com" target="_blank">https://www.readon-arabia.com </Link> </u>
+                        you will be recorded as a hit only, and <u><Link className='text-black' to="https://www.readon-arabia.com" target="_blank">https://www.readon-arabia.com</Link></u> will not collect any personal information from you unless otherwise stated.</p>
                 </div>
 
                 <div className="font24-bold my-4">
@@ -200,7 +200,7 @@ const PrivacyPolicy = () => {
                     </p>
                 </div>
                 <p>
-                    If you have any questions about our Privacy Practices or this Policy, please contact us by email to INFO@READINGMATTERS.IN
+                    If you have any questions about our Privacy Practices or this Policy, please contact us by email to INFO@READON-ARABIA.COM
                 </p>
             </div>
         </section>

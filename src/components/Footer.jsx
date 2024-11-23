@@ -51,8 +51,8 @@ const Footer = () => {
                         <Col lg={11} md={11} xs={11}>
                           <p className="font18-light text-primary-color">
                             <b>Email:</b>{' '}
-                            <a href="mailto:info@readingmatters.in" className="text-black">
-                              info@readingmatters.in
+                            <a href="mailto:info@readon-arabia.com" className="text-black">
+                              info@readon-arabia.com
                             </a>
                           </p>
                         </Col>
@@ -82,17 +82,17 @@ const Footer = () => {
               <div className="footer-info">
                 <Fade direction="up" cascade damping={0.3} triggerOnce={true}>
                   <h6 className="font24-bold mt-8 md:mt-0">Quick Links</h6>
-                  <NavLink to="/privacy-policy" target="_blank">
+                  <NavLink to="/privacy-policy">
                     <p className="mt-3 font18-light text-black flex">
                       <CaretRightFill color="black" size={18} className="mt-1" /> Privacy Policy
                     </p>
                   </NavLink>
-                  <NavLink to="/refund-policy" target="_blank">
+                  <NavLink to="/refund-policy">
                     <p className="mt-3 font18-light text-black flex">
                       <CaretRightFill color="black" size={18} className="mt-1" /> Refund Policy
                     </p>
                   </NavLink>
-                  <NavLink to="/terms-of-use" target="_blank">
+                  <NavLink to="/terms-of-use">
                     <p className="mt-3 font18-light text-black flex">
                       <CaretRightFill color="black" size={18} className="mt-1" /> Terms Of Use
                     </p>
@@ -125,8 +125,8 @@ const Footer = () => {
       </div>
       <div className="wrapper" style={{ background: '#fff6f4' }}>
         <Row>
-          <Col className="py-4">
-            <p className="text-center font15">© {new Date().getFullYear()} by ReadOn Arabia</p>
+          <Col className="py-10">
+            <p className="text-center font15" style={{ letterSpacing: '1.5px', color: 'rgb(57, 57, 60)' }}><i>Copyright © {new Date().getFullYear()} Orange Neurosciences Corporation</i></p>
           </Col>
         </Row>
       </div>

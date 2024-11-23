@@ -871,3 +871,21 @@ section {
 .w-70 {
   width: 70%;
 }
+
+@media (max-width: 1024px) {
+  .award-image {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .award-image {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .award-image {
+    max-width: 100px;
+  }
+}
